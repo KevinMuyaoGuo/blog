@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 /**
  * @Description
  * @Package com.gmy
- * @Author 20803848
+ * @Author Kevin Guo
  * @Date 2020/8/7
  */
 @ResponseStatus(HttpStatus.NOT_FOUND)
