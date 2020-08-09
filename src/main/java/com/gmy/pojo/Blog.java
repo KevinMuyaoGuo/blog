@@ -16,8 +16,8 @@ import java.util.List;
  * @Author Kevin Guo
  * @Date 2020/8/7
  */
-@Entity
-@Table(name = "t_blog")
+@Entity(name = "t_blog")
+@Table
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

@@ -12,8 +12,8 @@ import java.util.Date;
  * @Author Kevin Guo
  * @Date 2020/8/7
  */
-@Entity
-@Table(name = "t_comment")
+@Entity(name = "t_comment")
+@Table
 @Data
 @NoArgsConstructor
 public class Comment {

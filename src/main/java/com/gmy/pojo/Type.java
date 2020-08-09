@@ -14,8 +14,8 @@ import java.util.List;
  * @Author Kevin Guo
  * @Date 2020/8/7
  */
-@Entity
-@Table(name = "t_type")
+@Entity(name = "t_type")
+@Table
 @Data
 @NoArgsConstructor
 public class Type {
