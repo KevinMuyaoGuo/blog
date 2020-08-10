@@ -3,3 +3,5 @@ spring:
     mode: HTML
   profiles:
     active: dev
+
+# 管理员用户名密码：KevinGuo | 123456

@@ -39,6 +39,11 @@
     <remote-repository>
       <option name="id" value="nexus" />
       <option name="name" value="Nexus" />
+      <option name="url" value="http://172.28.1.170:8888/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="nexus" />
+      <option name="name" value="Nexus" />
       <option name="url" value="http://mirrors.163.com/maven/repository/maven-public/" />
     </remote-repository>
     <remote-repository>
@@ -75,6 +80,11 @@
       <option name="id" value="nexus_content" />
       <option name="name" value="nexus_content" />
       <option name="url" value="http://mirrors.cloud.tencent.com/nexus/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="nexus_content" />
+      <option name="name" value="nexus_content" />
+      <option name="url" value="http://172.28.1.170:8888/nexus/content/groups/public/" />
     </remote-repository>
   </component>
 </project>
