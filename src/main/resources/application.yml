@@ -4,4 +4,4 @@ spring:
   profiles:
     active: dev
 
-# 管理员用户名密码：KevinGuo | 123456
+# 管理员    用户名 | 密码 ：KevinGuo | 123
