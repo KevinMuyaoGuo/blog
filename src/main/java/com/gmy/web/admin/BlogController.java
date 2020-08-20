@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class BlogController {
 
     @GetMapping("/blogs-admin")
-    public String list() {
+    public String blogs_admin() {
         return "admin/blogs-admin";
     }
 }

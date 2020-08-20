@@ -1,12 +1,13 @@
 package com.gmy.pojo;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+import javax.validation.constraints.*;
+
 
 /**
  * @Description
@@ -24,6 +25,7 @@ public class Type {
     @GeneratedValue
     private Long id;//主键id
 
+    @NotEmpty(message = "分类名称不能为空")
     private String name;//分类名
 
     @OneToMany(mappedBy = "type")
