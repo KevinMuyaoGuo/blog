@@ -38,8 +38,8 @@
 <div class="ui attached pointing menu">
     <div class="ui container">
         <div class="right menu">
-            <a href="#" class="item">发布</a>
-            <a href="#" class="green active item">列表</a>
+            <a href="#" th:href="@{/admin/types-admin/create}" class="item">发布</a>
+            <a href="#" th:href="@{/admin/types-admin}" class="green active item">列表</a>
         </div>
     </div>
 </div>
@@ -56,7 +56,7 @@
             <thead>
                 <tr>
                     <th></th>
-                    <th>名称</th>
+                    <th>分类名称</th>
                     <th>操作</th>
                 </tr>
             </thead>
