@@ -37,15 +37,15 @@ public class Blog {
 
     private Integer views;//浏览数
 
-    private boolean appreciationStatus;//
+    private boolean appreciation;//文章是否开启赞赏
 
-    private boolean shareStatus;//文章是否开启分享
+    private boolean shareStatement;//转载声明
 
-    private boolean commentStatus;//文章是否开启评论
+    private boolean commentable;//文章是否开启评论
 
-    private boolean publishStatus;//文章是否发布
+    private boolean published;//文章是否发布
 
-    private boolean recommendStatus;//文章是否推荐
+    private boolean recommend;//文章是否推荐
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;//文章创建时间
