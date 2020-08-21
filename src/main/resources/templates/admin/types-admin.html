@@ -52,7 +52,7 @@
             <div class="header">提示：</div>
             <p th:text="${message}">操作成功！</p>
         </div>
-        <table class="ui table">
+        <table class="ui compact green table">
             <thead>
                 <tr>
                     <th></th>
@@ -142,7 +142,7 @@
     </div>
 </footer>
 
-<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<!--/*/<th:block th:replace="admin/_fragments :: script">/*/-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 <!--/*/</th:block>/*/-->
@@ -150,16 +150,16 @@
 <script>
     $('.menu.toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');
-    })
+    });
 
     $('.ui.dropdown').dropdown({
         on: 'hover'
-    })
+    });
 
     //消息提示关闭初始化
-    $('.message .close').on('click',function () {
+    $('.message .close').on('click', function () {
         $(this).closest('.message').transition('fade');
-    })
+    });
 </script>
 </body>
 </html>
