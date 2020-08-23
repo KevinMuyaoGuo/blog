@@ -29,6 +29,8 @@ public class Blog {
 
     private String title;//文章标题
 
+    @Basic(fetch = FetchType.LAZY)
+    @Lob
     private String content;//文章内容
 
     private String firstPicture;//文章首图
@@ -64,4 +66,7 @@ public class Blog {
 
     @OneToMany(mappedBy = "blog")
     private List<Comment> comments = new ArrayList<>();//该文章对应的所有留言
+
+    @Transient
+    private String tagIds;
 }

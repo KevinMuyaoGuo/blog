@@ -4,6 +4,8 @@ import com.gmy.pojo.Tag;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 /**
  * @author Kevin Guo
  * @package com.gmy.service
@@ -23,6 +25,11 @@ public interface TagService {
 
     //分页查询
     Page<Tag> listTag(Pageable pageable);
+
+    //查询所有
+    List<Tag> listTag();
+
+    List<Tag> listTag(String ids);
 
     //修改
     Tag updateTag(Long id, Tag tag);
