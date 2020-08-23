@@ -20,7 +20,7 @@ import java.util.List;
  * @description
  */
 @Service
-public class TagServiceImpl implements TagService{
+public class TagServiceImpl implements TagService {
 
     @Autowired
     private TagRepository tagRepository;
@@ -61,7 +61,7 @@ public class TagServiceImpl implements TagService{
 
     private List<Long> convertToList(String ids) {
         List<Long> list = new ArrayList<>();
-        if ("".equals(ids) && ids != null) {
+        if (!"".equals(ids) && ids != null) {
             String[] idArray = ids.split(",");
             for (int i = 0; i < idArray.length; i++) {
                 list.add(new Long(idArray[i]));
