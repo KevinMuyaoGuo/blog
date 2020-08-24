@@ -1914,3 +1914,113 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2020-08-24 15:58:59.322  INFO 6316 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
 2020-08-24 15:58:59.332  INFO 6316 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : blog
 2020-08-24 15:58:59.333  INFO 6316 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-24 16:23:32.570  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s179ms).
+2020-08-24 16:29:20.796  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m18s215ms).
+2020-08-24 16:34:33.977  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s181ms).
+2020-08-24 16:40:17.160  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s180ms).
+2020-08-24 16:46:00.382  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s217ms).
+2020-08-24 16:51:43.539  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s149ms).
+2020-08-24 17:15:05.364  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m51s816ms).
+2020-08-24 17:20:30.617  INFO 6316 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-24 17:20:30.629  INFO 6316 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-24 17:20:30.629  INFO 6316 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-24 19:02:49.253  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s135ms).
+2020-08-24 19:08:37.479  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m18s219ms).
+2020-08-24 19:13:50.681  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s202ms).
+2020-08-24 19:19:33.951  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s270ms).
+2020-08-24 19:25:17.119  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s164ms).
+2020-08-24 19:31:00.346  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s222ms).
+2020-08-24 19:34:17.225  WARN 6316 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m46s872ms).
+2020-08-24 19:34:47.000  INFO 6316 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-24 19:34:47.003  INFO 6316 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-24 19:34:47.005  INFO 6316 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-24 19:34:47.017  INFO 6316 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-24 19:34:47.433  INFO 6316 --- [restartedMain] com.gmy.BlogApplication                  : Starting BlogApplication on bogon with PID 6316 (/Users/guomuyao/Coding/project/java/web/blog/target/classes started by guomuyao in /Users/guomuyao/Coding/project/java/web/blog)
+2020-08-24 19:34:47.433 DEBUG 6316 --- [restartedMain] com.gmy.BlogApplication                  : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-24 19:34:47.434  INFO 6316 --- [restartedMain] com.gmy.BlogApplication                  : The following profiles are active: dev
+2020-08-24 19:34:47.807  INFO 6316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-24 19:34:47.864  INFO 6316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 4 JPA repository interfaces.
+2020-08-24 19:34:48.570  INFO 6316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-24 19:34:48.574  INFO 6316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-24 19:34:48.575  INFO 6316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-24 19:34:48.621  INFO 6316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-24 19:34:48.623  INFO 6316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1174 ms
+2020-08-24 19:34:48.750  INFO 6316 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-24 19:34:48.797  INFO 6316 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-24 19:34:48.811  INFO 6316 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-08-24 19:34:48.830  INFO 6316 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-08-24 19:34:48.831  INFO 6316 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-24 19:34:49.157  WARN 6316 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-24 19:34:49.379  INFO 6316 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-24 19:34:49.380  INFO 6316 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-24 19:34:49.480  INFO 6316 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-24 19:34:49.484  INFO 6316 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-24 19:34:49.779  INFO 6316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-24 19:34:49.779  INFO 6316 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-24 19:34:50.132  INFO 6316 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-24 19:34:50.135  INFO 6316 --- [restartedMain] com.gmy.BlogApplication                  : Started BlogApplication in 2.767 seconds (JVM running for 8678.505)
+2020-08-24 19:34:50.136  INFO 6316 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-08-24 19:34:53.624  INFO 6316 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-24 19:34:53.624  INFO 6316 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-24 19:34:53.625  INFO 6316 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-08-24 19:34:53.632  INFO 6316 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-08-24 19:34:56.739  INFO 7098 --- [restartedMain] com.gmy.BlogApplication                  : Starting BlogApplication on bogon with PID 7098 (/Users/guomuyao/Coding/project/java/web/blog/target/classes started by guomuyao in /Users/guomuyao/Coding/project/java/web/blog)
+2020-08-24 19:34:56.741 DEBUG 7098 --- [restartedMain] com.gmy.BlogApplication                  : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-24 19:34:56.741  INFO 7098 --- [restartedMain] com.gmy.BlogApplication                  : The following profiles are active: dev
+2020-08-24 19:34:57.102  INFO 7098 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-24 19:34:57.102  INFO 7098 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-24 19:34:57.687  INFO 7098 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-24 19:34:57.752  INFO 7098 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 4 JPA repository interfaces.
+2020-08-24 19:34:58.435  INFO 7098 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-24 19:34:58.444  INFO 7098 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-24 19:34:58.445  INFO 7098 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-24 19:34:58.552  INFO 7098 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-24 19:34:58.552  INFO 7098 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1450 ms
+2020-08-24 19:34:58.722  INFO 7098 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-24 19:34:58.774  INFO 7098 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-24 19:34:58.813  INFO 7098 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-24 19:34:58.904  WARN 7098 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-24 19:34:58.910  INFO 7098 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-24 19:34:58.993  INFO 7098 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-24 19:34:59.227  INFO 7098 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-24 19:34:59.319  INFO 7098 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-24 19:34:59.336  INFO 7098 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-24 19:34:59.955  INFO 7098 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-24 19:34:59.995  INFO 7098 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-24 19:34:59.997  INFO 7098 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-24 19:35:00.196  INFO 7098 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-24 19:35:00.203  INFO 7098 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-24 19:35:00.654  INFO 7098 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-24 19:35:00.662  INFO 7098 --- [restartedMain] com.gmy.BlogApplication                  : Started BlogApplication in 4.43 seconds (JVM running for 5.927)
+2020-08-24 20:12:06.620  INFO 7098 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-24 20:12:06.622  INFO 7098 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-24 20:12:06.624  INFO 7098 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-24 20:12:06.633  INFO 7098 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-24 20:12:10.828  INFO 7327 --- [restartedMain] com.gmy.BlogApplication                  : Starting BlogApplication on bogon with PID 7327 (/Users/guomuyao/Coding/project/java/web/blog/target/classes started by guomuyao in /Users/guomuyao/Coding/project/java/web/blog)
+2020-08-24 20:12:10.832 DEBUG 7327 --- [restartedMain] com.gmy.BlogApplication                  : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-24 20:12:10.832  INFO 7327 --- [restartedMain] com.gmy.BlogApplication                  : The following profiles are active: dev
+2020-08-24 20:12:11.161  INFO 7327 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-24 20:12:11.162  INFO 7327 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-24 20:12:11.712  INFO 7327 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-24 20:12:11.779  INFO 7327 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 4 JPA repository interfaces.
+2020-08-24 20:12:12.557  INFO 7327 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-24 20:12:12.568  INFO 7327 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-24 20:12:12.568  INFO 7327 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-24 20:12:12.685  INFO 7327 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-24 20:12:12.686  INFO 7327 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1524 ms
+2020-08-24 20:12:12.860  INFO 7327 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-24 20:12:12.922  INFO 7327 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-24 20:12:12.994  INFO 7327 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-24 20:12:13.106  WARN 7327 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-24 20:12:13.115  INFO 7327 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-24 20:12:13.247  INFO 7327 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-24 20:12:13.690  INFO 7327 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-24 20:12:13.787  INFO 7327 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-24 20:12:13.813  INFO 7327 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-24 20:12:14.955  INFO 7327 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-24 20:12:15.025  INFO 7327 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-24 20:12:15.029  INFO 7327 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-24 20:12:15.285  INFO 7327 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-24 20:12:15.296  INFO 7327 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-24 20:12:16.165  INFO 7327 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-24 20:12:16.175  INFO 7327 --- [restartedMain] com.gmy.BlogApplication                  : Started BlogApplication in 6.153 seconds (JVM running for 7.726)

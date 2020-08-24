@@ -472,86 +472,89 @@ h5,h6{font-size:1em;}
             </div>
         </div>
         <!--留言区域-->
-        <div id="comment-container" class="ui bottom attached segment">
-            <div class="ui green segment">
-                <div class="ui comments">
-                    <h3 class="ui dividing header">留言</h3>
-                    <div class="comment">
-                        <a class="avatar">
-                            <img src="../static/images/visitor1.jpg" th:src="@{/images/visitor1.jpg}">
-                        </a>
-                        <div class="content">
-                            <a class="author">小王</a>
-                            <div class="metadata">
-                                <span class="date">今天 at 5:42PM</span>
-                            </div>
-                            <div class="text">
-                                来了来了~
-                            </div>
-                            <div class="actions">
-                                <a class="reply">回复</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment">
-                        <a class="avatar">
-                            <img src="../static/images/visitor1.jpg" th:src="@{/images/visitor1.jpg}">
-                        </a>
-                        <div class="content">
-                            <a class="author">小王</a>
-                            <div class="metadata">
-                                <span class="date">昨天 at 12:30AM</span>
-                            </div>
-                            <div class="text">
-                                <p>留个脚印</p>
-                            </div>
-                            <div class="actions">
-                                <a class="reply">回复</a>
+        <div class="ui bottom attached segment">
+            <div id="comment-container" class="ui green segment">
+                <div th:fragment="commentList">
+                    <div class="ui threaded comments" style="max-width: 100%;">
+                        <h3 class="ui dividing header">留言</h3>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="../static/images/visitor1.jpg" th:src="@{/images/visitor1.jpg}">
+                            </a>
+                            <div class="content">
+                                <a class="author">小王</a>
+                                <div class="metadata">
+                                    <span class="date">今天 at 5:42PM</span>
+                                </div>
+                                <div class="text">
+                                    来了来了~
+                                </div>
+                                <div class="actions">
+                                    <a class="reply" data-commentid="1" data-commentnickname="小王" onclick="reply(this)">回复</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="comments">
-                            <div class="comment">
-                                <a class="avatar">
-                                    <img src="../static/images/visitor2.jpg" th:src="@{/images/visitor2.jpg}">
-                                </a>
-                                <div class="content">
-                                    <a class="author">刘小萱</a>
-                                    <div class="metadata">
-                                        <span class="date">前天</span>
-                                    </div>
-                                    <div class="text">
-                                        傻子
-                                    </div>
-                                    <div class="actions">
-                                        <a class="reply">回复</a>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="../static/images/visitor1.jpg" th:src="@{/images/visitor1.jpg}">
+                            </a>
+                            <div class="content">
+                                <a class="author">小王</a>
+                                <div class="metadata">
+                                    <span class="date">昨天 at 12:30AM</span>
+                                </div>
+                                <div class="text">
+                                    <p>留个脚印</p>
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">回复</a>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment">
+                                    <a class="avatar">
+                                        <img src="../static/images/visitor2.jpg" th:src="@{/images/visitor2.jpg}">
+                                    </a>
+                                    <div class="content">
+                                        <a class="author">刘小萱</a>
+                                        <div class="metadata">
+                                            <span class="date">前天</span>
+                                        </div>
+                                        <div class="text">
+                                            傻子
+                                        </div>
+                                        <div class="actions">
+                                            <a class="reply">回复</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="comment">
-                        <a class="avatar">
-                            <img src="../static/images/visitor1.jpg"  th:src="@{/images/visitor1.jpg}">
-                        </a>
-                        <div class="content">
-                            <a class="author">小王</a>
-                            <div class="metadata">
-                                <span class="date">五天前</span>
-                            </div>
-                            <div class="text">
-                                略略略~~
-                            </div>
-                            <div class="actions">
-                                <a class="reply">回复</a>
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="../static/images/visitor1.jpg"  th:src="@{/images/visitor1.jpg}">
+                            </a>
+                            <div class="content">
+                                <a class="author">小王</a>
+                                <div class="metadata">
+                                    <span class="date">五天前</span>
+                                </div>
+                                <div class="text">
+                                    略略略~~
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">回复</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <div class="ui form">
+            <div id="comment-form" class="ui form">
+                <input type="hidden" name="blog.id" th:value="${blog.id}">
+                <input type="hidden" name="parentComment.id" value="-1">
                 <div class="field">
-                    <textarea name="content" placeholder="客官，请留个脚印吧~"></textarea>
+                    <textarea name="content" placeholder="感兴趣的话请留个脚印吧~"></textarea>
                 </div>
                 <div class="fields">
                     <div class="field m-mobile-wide m-margin-bottom-small">
@@ -567,7 +570,7 @@ h5,h6{font-size:1em;}
                         </div>
                     </div>
                     <div class="field m-margin-bottom-small m-mobile-wide">
-                        <button class="ui green button m-mobile-wide"><i class="chevron up icon"></i>发布</button>
+                        <button id="commentPost-btn" type="button" class="ui green button m-mobile-wide"><i class="chevron up icon"></i>发布</button>
                     </div>
                 </div>
             </div>
@@ -578,9 +581,9 @@ h5,h6{font-size:1em;}
 <div id="toolbar" class="m-padded m-right-bottom m-fixed" style="display:none;">
     <div class="ui vertical icon buttons">
         <button type="button" class="ui toc green button">目录</button>
-        <a href="#comment-container" class="ui green button">留言</a>
+        <button id="goComment" class="ui green button">留言</button>
         <a href="#" onclick="return false;" class="ui wechat icon button"><i class="ui wechat icon"></i></a>
-        <a id="goTop" class="ui icon button" data-tooltip="返回顶部" data-position="left center"><i class="chevron up icon"></i></a>
+        <button id="goTop" class="ui icon button" data-tooltip="返回顶部" data-position="left center"><i class="chevron up icon"></i></button>
     </div>
 </div>
 
@@ -591,9 +594,11 @@ h5,h6{font-size:1em;}
 </div>
 
 <div class="ui wechatQRcode flowing popup transition hidden" style="width: 120px !important;">
-    <div id="qrcode"></div>
-    <br>
-    <div class="m-text-thin">微信扫码看文章</div>
+    <div class="image">
+        <div id="qrcode"></div>
+        <br>
+        <div class="m-text-thin">微信扫码看文章</div>
+    </div>
 </div>
 
 
@@ -643,6 +648,7 @@ h5,h6{font-size:1em;}
 <!--/*/<th:block th:replace="_fragments :: script">/*/-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
     <script src="../static/lib/prism/prism.js"></script>
     <script src="../static/lib/tocbot/tocbot.min.js"></script>
     <script src="../static/lib/qrcode/qrcode.min.js"></script>
@@ -677,13 +683,13 @@ h5,h6{font-size:1em;}
         popup: $('.toc-container.popup'),
         on: 'click',
         position: 'left center'
-    })
+    });
 
     $('.wechat').popup({
         popup: $('.wechatQRcode.popup'),
         on: 'hover',
         position: 'left center'
-    })
+    });
 
     var serverUrl = "127.0.0.1:8080";
     var webUrl = /*[[@{/blog/{id}(id=${blog.id})}]]*/"";
@@ -696,18 +702,87 @@ h5,h6{font-size:1em;}
         correctLevel : QRCode.CorrectLevel.H
     });
 
+    //滚动至留言区域
+    $('#goComment').click(function () {
+        $(window).scrollTo($('#comment-container'), 500);
+    });
+
     //右侧导航菜单栏隐藏和出现
     var waypoint = new Waypoint({
         element: document.getElementById('waypoint'),
-        handler: function(direction) {
+        handler: function (direction) {
             if (direction == 'down') {
                 $('#toolbar').show(200);
-            }else{
+            } else {
                 $('#toolbar').hide(300);
             }
-            console.log('Scrolled to waypoint!');
+            console.log('Scrolled to waypoint!' + direction);
         }
-    })
+    });
+
+    //评论表单验证
+    $('.ui.form').form({
+        fields: {
+            content: {
+                identifier: 'content',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入留言内容'
+                }]
+            },
+            nickname: {
+                identifier: 'nickname',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入你的昵称'
+                }]
+            },
+            email: {
+                identifier: 'email',
+                rules: [{
+                    type: 'email',
+                    prompt: '请填写正确的邮箱地址'
+                }]
+            }
+        }
+    });
+
+    $('#commentPost-btn').click(function () {
+        var boo = $('.ui.form').form('validate form');
+        if (boo) {
+            console.log('校验成功');
+        } else {
+            console.log('校验失败');
+        }
+    });
+
+    function postData() {
+        $('#comment-container').load(/*[[@{/comments}]]*/"", {
+            "parentComment.id": $("[name='parentComment.id']").val(),
+            "blog.id": $("[name='blog.id']").val(),
+            "nickname": $("[name='nickname']").val(),
+            "email": $("[name='email']").val(),
+            "content": $("[name='content']").val()
+        }, function (responseTxt, StatusTxt, xhr) {
+            $(window).scrollTo($('#comment-container'),500);
+            clearContent();
+        });
+    }
+
+    function clearContent() {
+        $("[name='content']").val('');
+        $("[name='parentComment.id']").val(-1);
+        $("[name='content']").attr("placeholder", "请输入留言内容...");
+    }
+
+    function reply(obj) {
+        var commentId = $(obj).data('commentid');
+        var commentNickname = $(obj).data('commentnickname');
+        $("[name='content']").attr("placeholder", "@" + commentNickname).focus();
+        $("[name='parentComment.id']").val(commentId);
+        $(window).scrollTo($('#comment-form'),500);
+
+    }
 
 </script>
 

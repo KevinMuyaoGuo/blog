@@ -4,7 +4,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @Description
@@ -35,4 +37,10 @@ public class Comment {
 
     @ManyToOne
     private Blog blog;//该评论对应的文章
+
+    @OneToMany(mappedBy = "parentComment")
+    private List<Comment> replyComments = new ArrayList<>();
+
+    @ManyToOne
+    private Comment parentComment;
 }
