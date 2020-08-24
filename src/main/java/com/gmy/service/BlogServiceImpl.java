@@ -4,6 +4,7 @@ import com.gmy.NotFoundException;
 import com.gmy.dao.BlogRepository;
 import com.gmy.pojo.Blog;
 import com.gmy.pojo.Type;
+import com.gmy.util.MarkdownUtils;
 import com.gmy.util.MyBeanUtils;
 import com.gmy.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
@@ -52,6 +53,19 @@ public class BlogServiceImpl implements BlogService{
     @Override
     public Blog getBlogById(Long id) {
         return blogRepository.getOne(id);
+    }
+
+    @Override
+    public Blog getAndConvert(Long id) {
+        Blog blog = blogRepository.getOne(id);
+        if (blog == null) {
+            throw new NotFoundException("该文章不存在");
+        }
+        Blog b = new Blog();
+        BeanUtils.copyProperties(blog, b);
+        String content = b.getContent();
+        b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+        return b;
     }
 
     @Override
