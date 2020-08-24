@@ -46,7 +46,7 @@
         <div class="ui top attached segment">
             <div class="ui  horizontal link list">
                 <div class="item">
-                    <img src="../static/images/portrait.JPG" th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
+                    <img src="../static/images/avatar.jpg" th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
                     <div class="content"><a href="#" class="header m-text-thin" th:text="${blog.user.nickname}">郭慕尧</a></div>
                 </div>
                 <div class="item">
@@ -467,7 +467,7 @@ h5,h6{font-size:1em;}
                     </ui>
                 </div>
                 <div class="five wide column">
-                    <img src="../static/images/wechat.PNG" th:src="@{/images/wechat.PNG}" alt="" class="ui right floated rounded bordered image" style="width: 110px">
+                    <img src="../static/images/wechat.png" th:src="@{/images/wechat.PNG}" alt="" class="ui right floated rounded bordered image" style="width: 110px">
                 </div>
             </div>
         </div>
@@ -477,23 +477,24 @@ h5,h6{font-size:1em;}
                 <div th:fragment="commentList">
                     <div class="ui threaded comments" style="max-width: 100%;">
                         <h3 class="ui dividing header">留言</h3>
-                        <div class="comment">
+                        <div class="comment" th:each="comment : ${comments}">
                             <a class="avatar">
-                                <img src="../static/images/visitor1.jpg" th:src="@{/images/visitor1.jpg}">
+                                <img src="../static/images/visitor1.jpg" th:src="@{${comment.avatar}}">
                             </a>
                             <div class="content">
-                                <a class="author">小王</a>
+                                <a class="author" th:text="${comment.nickname}">小王</a>
                                 <div class="metadata">
-                                    <span class="date">今天 at 5:42PM</span>
+                                    <span class="date" th:text="${#dates.format(comment.createTime, 'yyyy/MM/dd HH:mm')}">今天 at 5:42PM</span>
                                 </div>
-                                <div class="text">
+                                <div class="text" th:text="${comment.content}">
                                     来了来了~
                                 </div>
                                 <div class="actions">
-                                    <a class="reply" data-commentid="1" data-commentnickname="小王" onclick="reply(this)">回复</a>
+                                    <a class="reply" data-commentid="1" data-commentnickname="小王" th:attr="data-commentid=${comment.id}, data-commentnickname=${comment.nickname}" onclick="reply(this)">回复</a>
                                 </div>
                             </div>
                         </div>
+                        <!--/*-->
                         <div class="comment">
                             <a class="avatar">
                                 <img src="../static/images/visitor1.jpg" th:src="@{/images/visitor1.jpg}">
@@ -547,6 +548,7 @@ h5,h6{font-size:1em;}
                                 </div>
                             </div>
                         </div>
+                        <!--*/-->
                     </div>
                 </div>
             </div>
@@ -613,7 +615,7 @@ h5,h6{font-size:1em;}
             <div class="three wide column">
                 <div class="ui inverted link list">
                     <div class="item">
-                        <img src="../static/images/wechat.PNG" th:src="@{/images/wechat.PNG}" class="ui rounded image" alt="" style="width: 110px">
+                        <img src="../static/images/wechat.png" th:src="@{/images/wechat.PNG}" class="ui rounded image" alt="" style="width: 110px">
                     </div>
                 </div>
             </div>
@@ -751,6 +753,7 @@ h5,h6{font-size:1em;}
         var boo = $('.ui.form').form('validate form');
         if (boo) {
             console.log('校验成功');
+            postData();
         } else {
             console.log('校验失败');
         }

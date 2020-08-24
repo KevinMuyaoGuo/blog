@@ -2024,3 +2024,68 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2020-08-24 20:12:15.296  INFO 7327 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2020-08-24 20:12:16.165  INFO 7327 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
 2020-08-24 20:12:16.175  INFO 7327 --- [restartedMain] com.gmy.BlogApplication                  : Started BlogApplication in 6.153 seconds (JVM running for 7.726)
+2020-08-24 21:36:52.312  WARN 7327 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m37s884ms).
+2020-08-24 21:37:22.165  WARN 7327 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s854ms), soft-evicting connections from pool.
+2020-08-24 22:04:40.468  WARN 7327 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m18s303ms).
+2020-08-24 22:31:02.665  INFO 7327 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-24 22:31:02.668  INFO 7327 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-24 22:31:02.670  INFO 7327 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-24 22:31:02.678  INFO 7327 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-24 22:31:08.823  INFO 7955 --- [restartedMain] com.gmy.BlogApplication                  : Starting BlogApplication on bogon with PID 7955 (/Users/guomuyao/Coding/project/java/web/blog/target/classes started by guomuyao in /Users/guomuyao/Coding/project/java/web/blog)
+2020-08-24 22:31:08.831 DEBUG 7955 --- [restartedMain] com.gmy.BlogApplication                  : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-24 22:31:08.833  INFO 7955 --- [restartedMain] com.gmy.BlogApplication                  : The following profiles are active: dev
+2020-08-24 22:31:09.237  INFO 7955 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-24 22:31:09.238  INFO 7955 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-24 22:31:09.864  INFO 7955 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-24 22:31:09.937  INFO 7955 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65ms. Found 5 JPA repository interfaces.
+2020-08-24 22:31:10.772  INFO 7955 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-24 22:31:10.782  INFO 7955 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-24 22:31:10.782  INFO 7955 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-24 22:31:10.857  INFO 7955 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-24 22:31:10.857  INFO 7955 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1619 ms
+2020-08-24 22:31:11.036  INFO 7955 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-24 22:31:11.087  INFO 7955 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-24 22:31:11.126  INFO 7955 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-24 22:31:11.233  INFO 7955 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-24 22:31:11.234  WARN 7955 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-24 22:31:11.333  INFO 7955 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-24 22:31:11.570  INFO 7955 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-24 22:31:11.628  INFO 7955 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-24 22:31:11.645  INFO 7955 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-24 22:31:12.278  INFO 7955 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-24 22:31:12.320  INFO 7955 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-24 22:31:12.321  INFO 7955 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-24 22:31:12.521  INFO 7955 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-24 22:31:12.528  INFO 7955 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-24 22:31:13.038  INFO 7955 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-24 22:31:13.046  INFO 7955 --- [restartedMain] com.gmy.BlogApplication                  : Started BlogApplication in 5.281 seconds (JVM running for 6.807)
+2020-08-24 22:31:27.873  INFO 7955 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-24 22:31:27.873  INFO 7955 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-24 22:31:27.888  INFO 7955 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-08-24 22:31:27.922  INFO 7955 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-24 22:31:28.042  INFO 7955 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-24 22:31:28.043  INFO 7955 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-24 22:33:11.635  INFO 7955 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-24 22:33:11.645  INFO 7955 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-24 22:33:11.645  INFO 7955 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-24 22:33:27.967  INFO 7955 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.CommentController.post', args=[Comment(id=null, nickname=小郭, email=373606970@qq.com, content=测试留言功能, avatar=null, createTime=null, blog=Blog(id=38, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentable=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null))]}
+2020-08-24 22:33:28.084  INFO 7955 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : redirect:/comments/38
+2020-08-24 22:33:28.084  INFO 7955 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-24 22:33:28.097  INFO 7955 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/comments/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.CommentController.comments', args=[38, {}]}
+2020-08-24 22:33:28.127  INFO 7955 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : blog :: commentList
+2020-08-24 22:33:28.128  INFO 7955 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-24 22:34:06.200  INFO 7955 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-24 22:34:06.210  INFO 7955 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-24 22:34:06.210  INFO 7955 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-24 22:34:09.413  INFO 7955 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-24 22:34:09.422  INFO 7955 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-24 22:34:09.422  INFO 7955 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-24 22:35:12.888  INFO 7955 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-24 22:35:12.897  INFO 7955 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-24 22:35:12.897  INFO 7955 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-24 22:35:18.408  INFO 7955 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-24 22:35:18.416  INFO 7955 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-24 22:35:18.416  INFO 7955 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-24 22:36:19.246  INFO 7955 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-24 22:36:19.303  INFO 7955 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-24 22:36:19.303  INFO 7955 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
