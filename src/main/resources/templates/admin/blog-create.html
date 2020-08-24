@@ -63,7 +63,7 @@
                             <div class="item" data-value="翻译">翻译</div>
                         </div>
                     </div>
-                    <input type="text" name="title" placeholder="标题" th:value="*{title}">
+                    <input type="text" name="title" placeholder="请在此处输入标题..." th:value="*{title}">
                 </div>
             </div>
 
@@ -80,7 +80,7 @@
                         <div class="ui fluid selection dropdown">
                             <input type="hidden" name="type.id" th:value="*{type}!=null ? *{type.id}">
                             <i class="dropdown icon"></i>
-                            <div class="default text">分类</div>
+                            <div class="default text">请选择分类</div>
                             <div class="menu">
                                 <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}"
                                      th:text="${type.name}">错误日志
@@ -95,7 +95,7 @@
                         <div class="ui fluid selection multiple search dropdown">
                             <input type="hidden" name="tagIds" th:value="*{tagIds}">
                             <i class="dropdown icon"></i>
-                            <div class="default text">标签</div>
+                            <div class="default text">请选择标签</div>
                             <div class="menu">
                                 <div th:each="tag : ${tags}" class="item" data-value="1" th:data-value="${tag.id}" th:text="${tag.name}">SpringBoot</div>
                                 <!--/*-->
@@ -113,6 +113,10 @@
                     <input type="text" name="firstPicture" th:value="*{firstPicture}" placeholder="首图引用地址">
 
                 </div>
+            </div>
+
+            <div class="required field">
+                <textarea name="description" th:text="*{description}" placeholder="请在此处填写文章内容概述..." maxlength="200"></textarea>
             </div>
 
             <div class="inline fields">
@@ -266,6 +270,13 @@
                 rules: [{
                     type: 'empty',
                     prompt: '首图：请输入文章首图地址'
+                }]
+            },
+            description: {
+                identifier: 'description',
+                rules: [{
+                    type: 'empty',
+                    prompt: '概述：请输入文章内容概述'
                 }]
             }
         }
