@@ -3,7 +3,7 @@ spring:
     mode: HTML
   profiles:
     active: dev
+  messages:
+    basename: i18n/messages
 
 comment.avatar: /images/visitor1.jpg
-
-# 管理员    用户名 | 密码 ：KevinGuo | 123

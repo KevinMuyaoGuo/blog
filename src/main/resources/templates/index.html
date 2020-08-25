@@ -33,7 +33,7 @@
 </nav>
 
 <!--中间内容-->
-<div class="m-container m-padded-tb-big">
+<div class="m-container m-padded-tb-big animate__animated animate__fadeIn">
     <div class="ui container">
         <div class="ui stackable grid">
 
@@ -503,13 +503,13 @@
                                 <i class="idea icon"></i>分类
                             </div>
                             <div class="right aligned column">
-                                <a href="#">更多 <i class="angle double right icon"></i></a>
+                                <a href="#" th:href="@{types/-1}">更多 <i class="angle double right icon"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="ui green segment">
                         <div class="ui fluid vertical menu">
-                            <a href="#" class="item" th:each="type : ${types}">
+                            <a href="#" th:href="@{/types/{id}(id=${type.id})}" target="_blank" class="item" th:each="type : ${types}">
                                 <span th:text="${type.name}">学习日志</span>
                                 <div class="ui green basic left pointing label" th:text="${#arrays.length(type.blogs)}">12</div>
                             </a>
@@ -546,12 +546,12 @@
                                 <i class="tags icon"></i>标签
                             </div>
                             <div class="right aligned column">
-                                <a href="#">更多 <i class="angle double right icon"></i></a>
+                                <a href="#" th:href="@{tags/-1}">更多 <i class="angle double right icon"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="ui green segment">
-                        <a href="#" class="ui green basic left pointing label m-margin-tb-tiny" th:each="tag : ${tags}">
+                        <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" target="_blank" class="ui green basic left pointing label m-margin-tb-tiny" th:each="tag : ${tags}">
                             <span th:text="${tag.name}">SpringBoot</span>
                             <div class="detail" th:text="${#arrays.length(tag.blogs)}">10</div>
                         </a>

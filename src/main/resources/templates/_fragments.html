@@ -19,7 +19,7 @@
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui white header item">薛定谔的麻辣锅</h2>
-            <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${pageNum==1}?'active'"><i class="home icon"></i>首页</a>
+            <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${pageNum==1}?'active'"><i class="home icon"></i><span th:text="#{nav.index}">首页</span></a>
             <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${pageNum==2}?'active'"><i class="idea icon"></i>分类</a>
             <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${pageNum==3}?'active'"><i class="tags icon"></i>标签</a>
             <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${pageNum==4}?'active'"><i class="clone icon"></i>归档</a>
@@ -54,9 +54,9 @@
             <div class="four wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced m-opacity-mini">联系我</h4>
                 <div class="ui inverted link list">
-                    <a href="#" class="item m-text-thin">微信：gmy19980822</a>
-                    <a href="#" class="item m-text-thin">QQ：373606970</a>
-                    <a href="#" class="item m-text-thin">邮箱：kevinguomy@163.com</a>
+                    <a href="#" class="item m-text-thin" th:text="|微信：#{index.wechat}|">微信：gmy19980822</a>
+                    <a href="#" class="item m-text-thin" th:text="|QQ：#{index.qq}|">QQ：373606970</a>
+                    <a href="#" class="item m-text-thin" th:text="|邮箱：#{index.email}|">邮箱：kevinguomy@163.com</a>
                 </div>
             </div>
             <div class="five wide column">
@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="ui inverted section divider m-text-thin m-text-spaced m-opacity-mini"></div>
-        <p class="m-text-slim m-text-spaced m-opacity-tiny">Copyright©2020 Designed by Kevin Guo</p>
+        <p class="m-text-slim m-text-spaced m-opacity-tiny">Copyright © 2020 Designed by Kevin Guo</p>
     </div>
 </footer>
 
