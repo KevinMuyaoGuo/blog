@@ -54,9 +54,9 @@
             <div class="four wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced m-opacity-mini">联系我</h4>
                 <div class="ui inverted link list">
-                    <a href="#" class="item">微信：gmy19980822</a>
-                    <a href="#" class="item">QQ：373606970</a>
-                    <a href="#" class="item">邮箱：kevinguomy@163.com</a>
+                    <a href="#" class="item m-text-thin">微信：gmy19980822</a>
+                    <a href="#" class="item m-text-thin">QQ：373606970</a>
+                    <a href="#" class="item m-text-thin">邮箱：kevinguomy@163.com</a>
                 </div>
             </div>
             <div class="five wide column">
@@ -67,10 +67,14 @@
             </div>
             <div class="four wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced m-opacity-mini">最新博客</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item">用户故事</a>
-                    <a href="#" class="item">用户故事</a>
-                    <a href="#" class="item">用户故事</a>
+                <div id="newBlog-container">
+                    <div class="ui inverted link list" th:fragment="newBlogList">
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newBlogs}" th:text="${blog.title}">用户故事</a>
+                        <!--/*-->
+                        <a href="#" class="item m-text-thin">用户故事</a>
+                        <a href="#" class="item m-text-thin">用户故事</a>
+                        <!--*/-->
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,6 +90,10 @@
     <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
     <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
     <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+
+    <script>
+        $('#newBlog-container').load(/*[[@{/footer/newBlog}]]*/"/footer/newBlog");
+    </script>
 </th:block>
 
 </body>
