@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
+<head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>薛定谔的麻辣锅-分类</title>
@@ -10,7 +10,7 @@
 <body>
 
 <!--导航-->
-<nav th:replace="_fragments :: menu(2)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+<nav th:replace="_fragments :: page(2)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui white header item">薛定谔的麻辣锅</h2>
@@ -42,49 +42,25 @@
                     <h3 class="ui green header">分类</h3>
                 </div>
                 <div class="right aligned column">
-                    共 <h4 class="ui orange header m-inline-block m-text-thin"> 11 </h4> 个
+                    共 <h4 class="ui orange header m-inline-block m-text-thin" th:text="${#arrays.length(types)}"> 11 </h4> 个
                 </div>
 
             </div>
         </div>
 
         <div class="ui attached segment m-padded-tb-large">
-            <div class="ui labeled button m-margin-tb-tiny">
-                <a href="#" class="ui basic green button">SpringBoot</a>
-                <div class="ui basic green label">21</div>
-            </div>
-            <div class="ui labeled button m-margin-tb-tiny">
-                <a href="#" class="ui basic button">Java</a>
-                <div class="ui basic label">21</div>
-            </div>
-            <div class="ui labeled button m-margin-tb-tiny">
-                <a href="#" class="ui basic button">Java</a>
-                <div class="ui basic label">21</div>
-            </div>
-            <div class="ui labeled button m-margin-tb-tiny">
-                <a href="#" class="ui basic button">Java</a>
-                <div class="ui basic label">21</div>
-            </div>
-            <div class="ui labeled button m-margin-tb-tiny">
-                <a href="#" class="ui basic button">C++</a>
-                <div class="ui basic label">21</div>
-            </div>
-            <div class="ui labeled button m-margin-tb-tiny">
-                <a href="#" class="ui basic button">C++</a>
-                <div class="ui basic label">21</div>
-            </div>
-            <div class="ui labeled button m-margin-tb-tiny">
-                <a href="#" class="ui basic button">C++</a>
-                <div class="ui basic label">21</div>
+            <div class="ui labeled button m-margin-tb-tiny" th:each="type : ${types}">
+                <a href="#" th:href="@{/types/{id}(id=${type.id})}" class="ui basic button" th:classappend="${type.id==activeTypeId} ? 'green'" th:text="${type.name}">SpringBoot</a>
+                <div class="ui basic label" th:classappend="${type.id==activeTypeId} ? 'green'" th:text="${#arrays.length(type.blogs)}">21</div>
             </div>
         </div>
 
         <div class="ui top attached green segment">
-            <div class="ui padded vertical segment m-padded-large m-mobile-left-right-clear">
-                <div class="ui mobile reversed stackable grid">
+            <div class="ui padded vertical segment m-padded-large" th:each="blog : ${page.content}">
+                <div class="ui middle aligned mobile reversed stackable grid">
                     <div class="eleven wide column">
-                        <h3 class="ui header">文章标题1</h3>
-                        <p class="m-text">大江东去，浪淘尽，千古风流人物。
+                        <h3 class="ui header"><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black" th:text="${blog.title}">文章标题1</a></h3>
+                        <p class="m-text" th:text="|${blog.description}......|">大江东去，浪淘尽，千古风流人物。
                             故垒西边，人道是，三国周郎赤壁。
                             乱石穿空，惊涛拍岸，卷起千堆雪。
                             江山如画，一时多少豪杰。
@@ -96,195 +72,26 @@
                             <div class="eleven wide column">
                                 <div class="ui mini horizontal link list">
                                     <div class="item">
-                                        <img src="../static/images/avatar.jpg" th:src="@{/images/portrait.JPG}" alt="" class="ui avatar image">
-                                        <div class="content"><a href="#" class="header m-text-thin">郭慕尧</a></div>
+                                        <img src="../static/images/avatar.jpg" th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
+                                        <div class="content"><a href="#" class="header m-text-thin" th:text="${blog.user.nickname}">郭慕尧</a></div>
                                     </div>
                                     <div class="item">
-                                        <i class="calendar icon"></i> 2020/8/2
+                                        <i class="calendar icon"></i><span th:text="| ${#dates.format(blog.updateTime, 'yyyy/MM/dd')}|">2020/08/02</span>
                                     </div>
                                     <div class="item">
-                                        <i class="eye icon"></i> 100
+                                        <i class="eye icon"></i><span th:text="| ${blog.views}|">100</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="right aligned five wide column">
                                 <a href="#" target="_blank"
-                                   class="ui green basic label m-padded-tiny m-text-thin">认知升级</a>
+                                   class="ui green basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">认知升级</a>
                             </div>
                         </div>
                     </div>
                     <div class="five wide column">
-                        <a href="#" target="_blank">
-                            <!--                                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">-->
-                            <img src="../static/images/test.jpg" th:src="@{/images/test.jpg}" alt="" class="ui rounded image">
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="ui padded vertical segment m-padded-large m-mobile-left-right-clear">
-                <div class="ui mobile reversed stackable grid">
-                    <div class="eleven wide column">
-                        <h3 class="ui header">文章标题1</h3>
-                        <p class="m-text">大江东去，浪淘尽，千古风流人物。
-                            故垒西边，人道是，三国周郎赤壁。
-                            乱石穿空，惊涛拍岸，卷起千堆雪。
-                            江山如画，一时多少豪杰。
-                            遥想公瑾当年，小乔初嫁了，雄姿英发。
-                            羽扇纶巾，谈笑间，樯橹灰飞烟灭。
-                            故国神游，多情应笑我，早生华发。
-                            人生如梦，一尊还酹江月。</p>
-                        <div class="ui stackable grid">
-                            <div class="eleven wide column">
-                                <div class="ui mini horizontal link list">
-                                    <div class="item">
-                                        <img src="../static/images/avatar.jpg" th:src="@{/images/portrait.JPG}" alt="" class="ui avatar image">
-                                        <div class="content"><a href="#" class="header m-text-thin">郭慕尧</a></div>
-                                    </div>
-                                    <div class="item">
-                                        <i class="calendar icon"></i> 2020/8/2
-                                    </div>
-                                    <div class="item">
-                                        <i class="eye icon"></i> 100
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right aligned five wide column">
-                                <a href="#" target="_blank"
-                                   class="ui green basic label m-padded-tiny m-text-thin">认知升级</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="five wide column">
-                        <a href="#" target="_blank">
-                            <!--                                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">-->
-                            <img src="../static/images/test.jpg" th:src="@{/images/test.jpg}" alt="" class="ui rounded image">
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="ui padded vertical segment m-padded-large m-mobile-left-right-clear">
-                <div class="ui mobile reversed stackable grid">
-                    <div class="eleven wide column">
-                        <h3 class="ui header">文章标题1</h3>
-                        <p class="m-text">大江东去，浪淘尽，千古风流人物。
-                            故垒西边，人道是，三国周郎赤壁。
-                            乱石穿空，惊涛拍岸，卷起千堆雪。
-                            江山如画，一时多少豪杰。
-                            遥想公瑾当年，小乔初嫁了，雄姿英发。
-                            羽扇纶巾，谈笑间，樯橹灰飞烟灭。
-                            故国神游，多情应笑我，早生华发。
-                            人生如梦，一尊还酹江月。</p>
-                        <div class="ui stackable grid">
-                            <div class="eleven wide column">
-                                <div class="ui mini horizontal link list">
-                                    <div class="item">
-                                        <img src="../static/images/avatar.jpg" th:src="@{/images/portrait.JPG}" alt="" class="ui avatar image">
-                                        <div class="content"><a href="#" class="header m-text-thin">郭慕尧</a></div>
-                                    </div>
-                                    <div class="item">
-                                        <i class="calendar icon"></i> 2020/8/2
-                                    </div>
-                                    <div class="item">
-                                        <i class="eye icon"></i> 100
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right aligned five wide column">
-                                <a href="#" target="_blank"
-                                   class="ui green basic label m-padded-tiny m-text-thin">认知升级</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="five wide column">
-                        <a href="#" target="_blank">
-                            <!--                                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">-->
-                            <img src="../static/images/test.jpg" th:src="@{/images/test.jpg}" alt="" class="ui rounded image">
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="ui padded vertical segment m-padded-large m-mobile-left-right-clear">
-                <div class="ui mobile reversed stackable grid">
-                    <div class="eleven wide column">
-                        <h3 class="ui header">文章标题1</h3>
-                        <p class="m-text">大江东去，浪淘尽，千古风流人物。
-                            故垒西边，人道是，三国周郎赤壁。
-                            乱石穿空，惊涛拍岸，卷起千堆雪。
-                            江山如画，一时多少豪杰。
-                            遥想公瑾当年，小乔初嫁了，雄姿英发。
-                            羽扇纶巾，谈笑间，樯橹灰飞烟灭。
-                            故国神游，多情应笑我，早生华发。
-                            人生如梦，一尊还酹江月。</p>
-                        <div class="ui stackable grid">
-                            <div class="eleven wide column">
-                                <div class="ui mini horizontal link list">
-                                    <div class="item">
-                                        <img src="../static/images/avatar.jpg" th:src="@{/images/portrait.JPG}" alt="" class="ui avatar image">
-                                        <div class="content"><a href="#" class="header m-text-thin">郭慕尧</a></div>
-                                    </div>
-                                    <div class="item">
-                                        <i class="calendar icon"></i> 2020/8/2
-                                    </div>
-                                    <div class="item">
-                                        <i class="eye icon"></i> 100
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right aligned five wide column">
-                                <a href="#" target="_blank"
-                                   class="ui green basic label m-padded-tiny m-text-thin">认知升级</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="five wide column">
-                        <a href="#" target="_blank">
-                            <!--                                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">-->
-                            <img src="../static/images/test.jpg" th:src="@{/images/test.jpg}" alt="" class="ui rounded image">
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="ui padded vertical segment m-padded-large m-mobile-left-right-clear">
-                <div class="ui mobile reversed stackable grid">
-                    <div class="eleven wide column">
-                        <h3 class="ui header">文章标题1</h3>
-                        <p class="m-text">大江东去，浪淘尽，千古风流人物。
-                            故垒西边，人道是，三国周郎赤壁。
-                            乱石穿空，惊涛拍岸，卷起千堆雪。
-                            江山如画，一时多少豪杰。
-                            遥想公瑾当年，小乔初嫁了，雄姿英发。
-                            羽扇纶巾，谈笑间，樯橹灰飞烟灭。
-                            故国神游，多情应笑我，早生华发。
-                            人生如梦，一尊还酹江月。</p>
-                        <div class="ui stackable grid">
-                            <div class="eleven wide column">
-                                <div class="ui mini horizontal link list">
-                                    <div class="item">
-                                        <img src="../static/images/avatar.jpg" th:src="@{/images/portrait.JPG}" alt="" class="ui avatar image">
-                                        <div class="content"><a href="#" class="header m-text-thin">郭慕尧</a></div>
-                                    </div>
-                                    <div class="item">
-                                        <i class="calendar icon"></i> 2020/8/2
-                                    </div>
-                                    <div class="item">
-                                        <i class="eye icon"></i> 100
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right aligned five wide column">
-                                <a href="#" target="_blank"
-                                   class="ui green basic label m-padded-tiny m-text-thin">认知升级</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="five wide column">
-                        <a href="#" target="_blank">
-                            <!--                                    <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">-->
-                            <img src="../static/images/test.jpg" th:src="@{/images/test.jpg}" alt="" class="ui rounded image">
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
+                            <img src="../static/images/test.jpg" th:src="@{${blog.firstPicture}}" alt="" class="ui rounded image">
                         </a>
                     </div>
 
@@ -292,13 +99,13 @@
             </div>
         </div>
         <!--footer-->
-        <div class="ui bottom attached segment">
+        <div class="ui bottom attached segment" th:if="${page.totalPages}>1">
             <div class="ui middle aligned two column grid">
                 <div class="column">
-                    <a href="#" class="ui mini green basic button">上一页</a>
+                    <a th:href="@{/types(page=${page.number}-1)}" th:unless="${page.first}" class="ui mini green basic button">上一页</a>
                 </div>
                 <div class="right aligned column">
-                    <a href="#" class="ui mini green basic button">下一页</a>
+                    <a th:href="@{/types(page=${page.number}+1)}" th:unless="${page.last}" class="ui mini green basic button">下一页</a>
                 </div>
 
             </div>
@@ -310,7 +117,7 @@
 <br>
 
 <!--底部footer-->
-<footer class="ui inverted vertical segment m-padded-tb-massive">
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
     <div class="ui center aligned container">
         <div class="ui inverted divided stackable grid">
             <div class="three wide column">
@@ -348,9 +155,11 @@
     </div>
 </footer>
 
-
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+
 <script>
     $('.menu.toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');

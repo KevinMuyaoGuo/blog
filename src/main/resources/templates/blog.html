@@ -17,7 +17,7 @@
 <a name="top" id="top"></a>
 
 <!--导航-->
-<nav th:replace="_fragments :: page(0)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+<nav th:replace="_fragments :: page(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui white header item">薛定谔的麻辣锅</h2>
@@ -50,7 +50,7 @@
                     <div class="content"><a href="#" class="header m-text-thin" th:text="${blog.user.nickname}">郭慕尧</a></div>
                 </div>
                 <div class="item">
-                    <i class="calendar icon"></i><span th:text="| ${#dates.format(blog.updateTime, 'yyyy / MM / dd')}|">2020/08/02</span>
+                    <i class="calendar icon"></i><span th:text="| ${#dates.format(blog.updateTime, 'yyyy/MM/dd')}|">2020/08/02</span>
                 </div>
                 <div class="item">
                     <i class="eye icon"></i><span th:text="| ${blog.views}|">100</span>
@@ -482,7 +482,10 @@ h5,h6{font-size:1em;}
                                 <img src="../static/images/visitor1.jpg" th:src="@{${comment.avatar}}">
                             </a>
                             <div class="content">
-                                <a class="author" th:text="${comment.nickname}">小王</a>
+                                <a class="author">
+                                    <span th:text="${comment.nickname}">小王</span>
+                                    <div class="ui mini basic orange label m-padded-tiny m-text-normal" th:if="${comment.adminComment}">作者</div>
+                                </a>
                                 <div class="metadata">
                                     <span class="date" th:text="${#dates.format(comment.createTime, 'yyyy/MM/dd HH:mm')}">今天 at 5:42PM</span>
                                 </div>
@@ -491,6 +494,29 @@ h5,h6{font-size:1em;}
                                 </div>
                                 <div class="actions">
                                     <a class="reply" data-commentid="1" data-commentnickname="小王" th:attr="data-commentid=${comment.id}, data-commentnickname=${comment.nickname}" onclick="reply(this)">回复</a>
+                                </div>
+                            </div>
+                            <div class="comments" th:if="${#arrays.length(comment.replyComments)}>0">
+                                <div class="comment" th:each="reply : ${comment.replyComments}">
+                                    <a class="avatar">
+                                        <img src="../static/images/visitor1.jpg" th:src="@{${reply.avatar}}">
+                                    </a>
+                                    <div class="content">
+                                        <a class="author">
+                                            <span th:text="${reply.nickname}">小朱</span>
+                                            <div class="ui mini basic orange label m-padded-tiny m-text-normal" th:if="${reply.adminComment}">作者</div>
+                                            &nbsp;<span th:text="|@ ${reply.parentComment.nickname}|" class="m-green">@ 小王</span>
+                                        </a>
+                                        <div class="metadata">
+                                            <span class="date" th:text="${#dates.format(reply.createTime, 'yyyy/MM/dd HH:mm')}">今天 at 5:42PM</span>
+                                        </div>
+                                        <div class="text" th:text="${reply.content}">
+                                            来了来了~
+                                        </div>
+                                        <div class="actions">
+                                            <a class="reply" data-commentid="1" data-commentnickname="小王" th:attr="data-commentid=${reply.id}, data-commentnickname=${reply.nickname}" onclick="reply(this)">回复</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -562,13 +588,13 @@ h5,h6{font-size:1em;}
                     <div class="field m-mobile-wide m-margin-bottom-small">
                         <div class="ui left icon input">
                             <i class="user icon"></i>
-                            <input type="text" name="nickname" placeholder="姓名">
+                            <input type="text" name="nickname" placeholder="昵称" th:value="${session.user}!=null ? ${session.user.nickname}">
                         </div>
                     </div>
                     <div class="field m-mobile-wide m-margin-bottom-small">
                         <div class="ui left icon input">
                             <i class="mail icon"></i>
-                            <input type="text" name="email" placeholder="邮箱">
+                            <input type="text" name="email" placeholder="邮箱" th:value="${session.user}!=null ? ${session.user.email}">
                         </div>
                     </div>
                     <div class="field m-margin-bottom-small m-mobile-wide">
@@ -609,7 +635,7 @@ h5,h6{font-size:1em;}
 <br>
 
 <!--底部footer-->
-<footer class="ui inverted vertical segment m-padded-tb-massive">
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
     <div class="ui center aligned container">
         <div class="ui inverted divided stackable grid">
             <div class="three wide column">
@@ -650,7 +676,7 @@ h5,h6{font-size:1em;}
 <!--/*/<th:block th:replace="_fragments :: script">/*/-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
     <script src="../static/lib/prism/prism.js"></script>
     <script src="../static/lib/tocbot/tocbot.min.js"></script>
     <script src="../static/lib/qrcode/qrcode.min.js"></script>
@@ -749,6 +775,10 @@ h5,h6{font-size:1em;}
         }
     });
 
+    $(function () {
+        $('#comment-container').load(/*[[@{/comments/{id}(id=${blog.id})}]]*/"comments/6");
+    });
+
     $('#commentPost-btn').click(function () {
         var boo = $('.ui.form').form('validate form');
         if (boo) {
@@ -767,7 +797,7 @@ h5,h6{font-size:1em;}
             "email": $("[name='email']").val(),
             "content": $("[name='content']").val()
         }, function (responseTxt, StatusTxt, xhr) {
-            $(window).scrollTo($('#comment-container'),500);
+            // $(window).scrollTo($('#comment-container'),500);
             clearContent();
         });
     }

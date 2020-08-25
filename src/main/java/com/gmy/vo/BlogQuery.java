@@ -18,4 +18,5 @@ public class BlogQuery {
     private Long typeId;
 
     private boolean recommend;//是否推荐
+
 }

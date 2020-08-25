@@ -82,11 +82,15 @@ body {
 }
 
 .m-text-slim {
-    font-weight: 150 !important;
+    font-weight: 200 !important;
 }
 
 .m-text-thin {
     font-weight: 300 !important;
+}
+
+.m-text-normal {
+    font-weight: 400 !important;
 }
 
 .m-text-spaced {
@@ -174,6 +178,10 @@ body {
 /*-----------------color------------------*/
 .m-black {
     color: #333 !important;
+}
+
+.m-green {
+    color: #21ba45 !important;
 }
 
 /*-----------------mobile show------------------*/
