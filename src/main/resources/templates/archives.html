@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
+<head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>薛定谔的麻辣锅-归档</title>
@@ -42,103 +42,48 @@
                     <h3 class="ui green header">归档</h3>
                 </div>
                 <div class="right aligned column">
-                    共 <h4 class="ui orange header m-inline-block m-text-thin"> 11 </h4> 篇
+                    共 <h4 class="ui orange header m-inline-block m-text-thin" th:text="${blogCount}"> 11 </h4> 篇
                 </div>
 
             </div>
         </div>
 
-        <h3 class="ui center aligned header">2020</h3>
-        <div class="ui fluid vertical menu">
-            <a href="#" target="_blank" class="item">
+        <th:block th:each="item : ${archiveMap}">
+            <h3 class="ui center aligned header" th:text="|${item.key} 年|">2020</h3>
+            <div class="ui fluid vertical menu">
+                <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog : ${item.value}">
+                <span>
+                    <i class="mini green circle icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span th:text="${blog.title}">Maven 详解</span>&nbsp;&nbsp;
+                    <div class="ui green basic label m-padded-mini m-text-normal" th:text="|${#dates.format(blog.updateTime, 'MMMdd')}日|"> 8月3日</div>
+                </span>
+                    <div class="ui basic orange label m-padded-mini m-text-normal" th:text="${blog.flag}">原创</div>
+                </a>
+                <!--/*-->
+                <a href="#" target="_blank" class="item">
                 <span>
                     <i class="mini green circle icon"></i>Maven 详解
                     <div class="ui green basic label m-padded-mini m-text-thin"> 8月3日</div>
                 </span>
-                <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
-            </a>
-            <a href="#" target="_blank" class="item">
+                    <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
                 <span>
                     <i class="mini green circle icon"></i>Maven 详解
                     <div class="ui green basic label m-padded-mini m-text-thin"> 8月3日</div>
                 </span>
-                <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
-            </a>
-            <a href="#" target="_blank" class="item">
+                    <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
+                </a>
+                <a href="#" target="_blank" class="item">
                 <span>
                     <i class="mini green circle icon"></i>Maven 详解
                     <div class="ui green basic label m-padded-mini m-text-thin"> 8月3日</div>
                 </span>
-                <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
-            </a>
-            <a href="#" target="_blank" class="item">
-                <span>
-                    <i class="mini green circle icon"></i>Maven 详解
-                    <div class="ui green basic label m-padded-mini m-text-thin"> 8月3日</div>
-                </span>
-                <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
-            </a>
-            <a href="#" target="_blank" class="item">
-                <span>
-                    <i class="mini green circle icon"></i>Maven 详解
-                    <div class="ui green basic label m-padded-mini m-text-thin"> 8月3日</div>
-                </span>
-                <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
-            </a>
-            <a href="#" target="_blank" class="item">
-                <span>
-                    <i class="mini green circle icon"></i>Maven 详解
-                    <div class="ui green basic label m-padded-mini m-text-thin"> 8月3日</div>
-                </span>
-                <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
-            </a>
-        </div>
+                    <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
+                </a>
+                <!--*/-->
+            </div>
+        </th:block>
 
-        <h3 class="ui center aligned header">2019</h3>
-        <div class="ui fluid vertical menu">
-            <a href="#" target="_blank" class="item">
-                <span>
-                    <i class="mini green circle icon"></i>Maven 详解
-                    <div class="ui green basic label m-padded-mini m-text-thin"> 8月3日</div>
-                </span>
-                <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
-            </a>
-            <a href="#" target="_blank" class="item">
-                <span>
-                    <i class="mini green circle icon"></i>Maven 详解
-                    <div class="ui green basic label m-padded-mini m-text-thin"> 8月3日</div>
-                </span>
-                <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
-            </a>
-            <a href="#" target="_blank" class="item">
-                <span>
-                    <i class="mini green circle icon"></i>Maven 详解
-                    <div class="ui green basic label m-padded-mini m-text-thin"> 8月3日</div>
-                </span>
-                <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
-            </a>
-            <a href="#" target="_blank" class="item">
-                <span>
-                    <i class="mini green circle icon"></i>Maven 详解
-                    <div class="ui green basic label m-padded-mini m-text-thin"> 8月3日</div>
-                </span>
-                <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
-            </a>
-            <a href="#" target="_blank" class="item">
-                <span>
-                    <i class="mini green circle icon"></i>Maven 详解
-                    <div class="ui green basic label m-padded-mini m-text-thin"> 8月3日</div>
-                </span>
-                <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
-            </a>
-            <a href="#" target="_blank" class="item">
-                <span>
-                    <i class="mini green circle icon"></i>Maven 详解
-                    <div class="ui green basic label m-padded-mini m-text-thin"> 8月3日</div>
-                </span>
-                <div class="ui basic orange label m-padded-mini m-text-thin">原创</div>
-            </a>
-        </div>
 
     </div>
 </div>
@@ -147,7 +92,7 @@
 <br>
 
 <!--底部footer-->
-<footer class="ui inverted vertical segment m-padded-tb-massive">
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
     <div class="ui center aligned container">
         <div class="ui inverted divided stackable grid">
             <div class="three wide column">
@@ -186,8 +131,11 @@
 </footer>
 
 
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+
 <script>
     $('.menu.toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');
