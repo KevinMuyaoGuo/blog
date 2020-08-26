@@ -45,6 +45,14 @@ public class IndexController {
         return "index";
     }
 
+    @GetMapping("/search")
+    public String searchPage(@PageableDefault(size = 3, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+                             @RequestParam String query, Model model) {
+        model.addAttribute("page", blogService.listBlog("%"+query.toLowerCase()+"%", pageable));
+        model.addAttribute("query", query);
+        return "search";
+    }
+
     @PostMapping("/search")
     public String search(@PageableDefault(size = 3, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                          @RequestParam String query, Model model) {
