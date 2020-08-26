@@ -36,7 +36,7 @@
 <div class="m-container-small m-padded-tb-big animate__animated animate__fadeIn">
     <div class="ui container">
         <!--header-->
-        <div class="ui top attached padded segment">
+        <div class="ui top attached segment">
             <div class="ui middle aligned two column grid">
                 <div class="column">
                     <h3 class="ui green header">归档</h3>
@@ -56,7 +56,7 @@
                     <i class="mini green circle icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span th:text="${blog.title}">Maven 详解</span>&nbsp;&nbsp;
                     <div class="ui green basic label m-padded-mini m-text-normal" th:text="|${#dates.format(blog.updateTime, 'MMMdd')}日|"> 8月3日</div>
                 </span>
-                    <div class="ui basic orange label m-padded-mini m-text-normal" th:text="${blog.flag}">原创</div>
+                    <div class="ui basic blue label m-padded-tiny m-text-normal" th:text="${blog.flag}">原创</div>
                 </a>
                 <!--/*-->
                 <a href="#" target="_blank" class="item">

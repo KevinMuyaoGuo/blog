@@ -20,7 +20,7 @@
             <div class="right m-item m-mobile-hide menu">
                 <div class="ui dropdown item">
                     <div class="text">
-                        <img src="../../static/images/avatar.jpg" alt="" class="ui avatar image">
+                        <img src="../../static/images/avatar.jpg" th:src="@{#{imagesURL}+#{admin.avatar}" alt="" class="ui avatar image">
                         郭慕尧
                     </div>
                     <i class="dropdown icon"></i>
@@ -41,9 +41,9 @@
     <div class="ui container">
         <div class="ui success large message">
             <h3>哈喽！</h3>
-            <p>郭慕尧，欢迎登录！</p>
+            <p>欢迎登录！</p>
         </div>
-        <img src="../../static/images/test.jpg" alt="" class="ui rounded bordered fluid image">
+        <img src="../../static/images/test.jpg" th:src="@{images/test.jpg}" alt="" class="ui rounded bordered fluid image">
     </div>
 </div>
 
