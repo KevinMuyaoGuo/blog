@@ -19,4 +19,6 @@ public class BlogQuery {
 
     private boolean recommend;//是否推荐
 
+    private boolean published;//是否发布
+
 }

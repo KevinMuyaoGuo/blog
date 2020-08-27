@@ -95,7 +95,7 @@
         </div>
 
         <!--footer-->
-        <div class="ui bottom attached segment" th:if="${page.totalPages}>1">
+        <div class="ui bottom attached segment">
             <div class="ui middle aligned three column grid">
                 <div class="column">
                     <a href="#" th:href="@{/search(page=${page.number}-1)}" th:unless="${page.first}" class="ui mini green basic button">上一页</a>

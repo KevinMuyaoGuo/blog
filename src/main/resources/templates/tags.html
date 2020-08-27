@@ -104,7 +104,7 @@
             </div>
         </div>
         <!--footer-->
-        <div class="ui bottom attached segment" th:if="${page.totalPages}>1">
+        <div class="ui bottom attached segment">
             <div class="ui middle aligned three column grid">
                 <div class="column">
                     <a th:href="@{/tags/{id}?page={page}(id=${activeTagId},page=${page.number}-1)}" th:unless="${page.first}" class="ui mini green basic button">上一页</a>
