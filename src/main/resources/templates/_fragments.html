@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
     <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
     <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="../static/lib/particleground/style.css" th:href="@{/lib/particleground/style.css}">
 </head>
 <body>
 
@@ -90,8 +91,17 @@
     <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
     <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
     <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script src="../static/lib/particleground/jquery-1.11.1.min.js" th:src="@{/lib/particleground/jquery-1.11.1.min.js}"></script>
+    <script src="../static/lib/particleground/jquery.particleground.min.js" th:src="@{/lib/particleground/jquery.particleground.min.js}"></script>
 
     <script>
+
+        $('#particles-background').particleground({
+            dotColor: '#666666',
+            lineColor: '#666666'
+
+        });
+
         $('#newBlog-container').load(/*[[@{/footer/newBlog}]]*/"/footer/newBlog");
     </script>
 </th:block>

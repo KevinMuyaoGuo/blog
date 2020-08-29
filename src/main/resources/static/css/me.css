@@ -1,6 +1,6 @@
-body {
+/*body {
     background: url("../images/bright-background.png");
-}
+}*/
 
 
 /*-------------------padded--------------------*/
@@ -162,6 +162,7 @@ body {
 .m-container {
     max-width: 72em !important;
     margin: auto !important;
+    position: absolute;
 }
 
 .m-container-small {
@@ -183,6 +184,10 @@ body {
 /*-----------------color------------------*/
 .m-black {
     color: #333 !important;
+}
+
+.m-grey {
+    color: #444444 !important;
 }
 
 .m-green {
