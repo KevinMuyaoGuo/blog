@@ -5115,3 +5115,51 @@ org.springframework.web.bind.MissingServletRequestParameterException: Required S
 2020-08-31 22:05:22.927  INFO 15034 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
 2020-08-31 22:05:22.932  INFO 15034 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
 2020-08-31 22:05:22.932  INFO 15034 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:01.728  INFO 15034 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TypeShowController.types', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 22:08:01.736  INFO 15034 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : types
+2020-08-31 22:08:01.736  INFO 15034 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:02.210  INFO 15034 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 22:08:02.215  INFO 15034 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 22:08:02.215  INFO 15034 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:05.694  INFO 15034 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/2', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TypeShowController.types', args=[Page request [number: 1, size 3, sort: updateTime: DESC], 2, {}]}
+2020-08-31 22:08:05.699  INFO 15034 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : types
+2020-08-31 22:08:05.699  INFO 15034 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:06.072  INFO 15034 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 22:08:06.078  INFO 15034 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 22:08:06.078  INFO 15034 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:11.127  INFO 15034 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 22:08:11.134  INFO 15034 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 22:08:11.134  INFO 15034 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:11.564  INFO 15034 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 22:08:11.569  INFO 15034 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 22:08:11.569  INFO 15034 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:12.925  INFO 15034 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TypeShowController.types', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 22:08:12.932  INFO 15034 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : types
+2020-08-31 22:08:12.932  INFO 15034 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:13.330  INFO 15034 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 22:08:13.335  INFO 15034 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 22:08:13.335  INFO 15034 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:14.276  INFO 15034 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 22:08:14.283  INFO 15034 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 22:08:14.284  INFO 15034 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:14.637  INFO 15034 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 22:08:14.698  INFO 15034 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 22:08:14.698  INFO 15034 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:16.596  INFO 15034 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/26', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 1, size 3, sort: updateTime: DESC], 26, {}]}
+2020-08-31 22:08:16.602  INFO 15034 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 22:08:16.602  INFO 15034 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:16.966  INFO 15034 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 22:08:16.971  INFO 15034 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 22:08:16.971  INFO 15034 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:19.627  INFO 15034 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.ArchiveShowController.archives', args=[{}]}
+2020-08-31 22:08:19.636  INFO 15034 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : archives
+2020-08-31 22:08:19.637  INFO 15034 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:19.969  INFO 15034 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 22:08:19.973  INFO 15034 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 22:08:19.973  INFO 15034 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:30.846  INFO 15034 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.AboutShowController.about', args=[]}
+2020-08-31 22:08:30.846  INFO 15034 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : about
+2020-08-31 22:08:30.846  INFO 15034 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 22:08:31.257  INFO 15034 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 22:08:31.263  INFO 15034 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 22:08:31.263  INFO 15034 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
