@@ -17,7 +17,7 @@
 <body>
 
 <!--导航-->
-<nav th:fragment="page(pageNum)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small m-nav">
+<nav th:fragment="page(pageNum)" class="ui inverted attached segment animate__animated animate__fadeIn m-padded-tb-mini m-shadow-small m-nav">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui white header item">薛定谔的麻辣锅</h2>
@@ -46,11 +46,16 @@
     </a>
 </nav>
 
+
+<!--中间内容-->
+<div th:fragment="particlesBackground" id="particles-background"></div>
+
+
 <!--底部footer-->
-<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive m-footer">
+<footer th:fragment="footer" class="ui inverted vertical segment animate__animated animate__fadeIn m-padded-tb-massive m-footer">
     <div class="ui center aligned container">
         <div class="ui inverted divided stackable grid">
-            <div class="three wide column">
+            <!--<div class="three wide column">
                 <div class="ui inverted link list">
                     <div class="item">
                         <img src="../static/images/wechat.png" th:src="@{#{imagesURL}+#{wechat}}"
@@ -58,22 +63,14 @@
                              alt="" style="width: 110px">
                     </div>
                 </div>
-            </div>
-            <div class="four wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced m-opacity-mini">联系我</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item m-text-thin" th:text="|微信：#{index.wechat}|">微信：gmy19980822</a>
-                    <a href="#" class="item m-text-thin" th:text="|QQ：#{index.qq}|">QQ：373606970</a>
-                    <a href="#" class="item m-text-thin" th:text="|邮箱：#{index.email}|">邮箱：kevinguomy@163.com</a>
-                </div>
-            </div>
+            </div>-->
             <div class="five wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced m-opacity-mini">关于我</h4>
                 <p class="m-text-thin m-text-spaced m-opacity-mini">
                     雨露均沾啥都学的小白程序员
                 </p>
             </div>
-            <div class="four wide column">
+            <div class="six wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced m-opacity-mini">最新博客</h4>
                 <div id="newBlog-container">
                     <div class="ui inverted link list" th:fragment="newBlogList">
@@ -84,6 +81,14 @@
                         <a href="#" class="item m-text-thin">用户故事</a>
                         <!--*/-->
                     </div>
+                </div>
+            </div>
+            <div class="five wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced m-opacity-mini">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin" th:text="|微信：#{index.wechat}|">微信：gmy19980822</a>
+                    <a href="#" class="item m-text-thin" th:text="|QQ：#{index.qq}|">QQ：373606970</a>
+                    <a href="#" class="item m-text-thin" th:text="|邮箱：#{index.email}|">邮箱：kevinguomy@163.com</a>
                 </div>
             </div>
         </div>

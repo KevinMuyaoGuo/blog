@@ -202,6 +202,14 @@
     color: #21ba45 !important;
 }
 
+/*-----------------guide page------------------*/
+
+.m-guide-page {
+    width: 100% !important;
+    height: 100% !important;
+    text-align: center !important;
+}
+
 /*-----------------mobile show------------------*/
 .m-mobile-show {
     display: none !important;

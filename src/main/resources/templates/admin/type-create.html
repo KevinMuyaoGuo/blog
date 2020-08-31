@@ -36,7 +36,7 @@
         <i class="sidebar icon"></i>
     </a>
 </nav>
-<div class="ui attached pointing menu">
+<div class="ui attached pointing menu animate__animated animate__fadeIn">
     <div class="ui container">
         <div class="right menu">
             <a href="#" th:href="@{/admin/types-admin/create}" class="green active item">发布</a>
@@ -46,7 +46,7 @@
 </div>
 
 <!--中间内容-->
-<div class="m-container-small m-padded-tb-big">
+<div class="m-container-small m-padded-tb-big animate__animated animate__fadeIn">
     <div class="ui container">
         <form action="#" method="post" th:object="${type}" th:action="*{id}==null ? @{/admin/types-admin} : @{/admin/types-admin/{id}(id=*{id})}" class="ui form">
             <input type="hidden" name="id" th:value="*{id}">
