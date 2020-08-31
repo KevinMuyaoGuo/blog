@@ -60,7 +60,7 @@
             <div class="ui padded vertical segment m-padded-large" th:each="blog : ${page.content}">
                 <div class="ui middle aligned mobile reversed stackable grid">
                     <div class="eleven wide column">
-                        <h3 class="ui header"><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black" th:text="${blog.title}">文章标题1</a></h3>
+                        <h3 class="ui header"><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-text-href" th:text="${blog.title}">文章标题1</a></h3>
                         <p class="m-text" th:text="|${blog.description}......|">大江东去，浪淘尽，千古风流人物。
                             故垒西边，人道是，三国周郎赤壁。
                             乱石穿空，惊涛拍岸，卷起千堆雪。

@@ -2145,3 +2145,953 @@
 2020-08-31 17:34:05.372  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
 2020-08-31 17:34:05.385  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
 2020-08-31 17:34:05.385  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:12.800  INFO 12590 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TypeShowController.types', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 17:37:12.812  INFO 12590 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : types
+2020-08-31 17:37:12.813  INFO 12590 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:13.580  INFO 12590 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:37:13.592  INFO 12590 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:37:13.593  INFO 12590 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:23.959  INFO 12590 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 17:37:23.976  INFO 12590 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 17:37:23.976  INFO 12590 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:24.726  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:37:24.738  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:37:24.738  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:34.231  INFO 12590 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.AboutShowController.about', args=[]}
+2020-08-31 17:37:34.231  INFO 12590 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : about
+2020-08-31 17:37:34.231  INFO 12590 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:35.595  INFO 12590 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:37:35.608  INFO 12590 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:37:35.608  INFO 12590 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:38.133  INFO 12590 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 17:37:38.152  INFO 12590 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 17:37:38.153  INFO 12590 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:38.724  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:37:38.733  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:37:38.733  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:40.223  INFO 12590 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TypeShowController.types', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 17:37:40.235  INFO 12590 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : types
+2020-08-31 17:37:40.235  INFO 12590 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:41.066  INFO 12590 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:37:41.072  INFO 12590 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:37:41.073  INFO 12590 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:46.700  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 17:37:46.712  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:37:46.712  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:46.923  INFO 12590 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 17:37:46.935  INFO 12590 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:37:46.936  INFO 12590 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:47.407  INFO 12590 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:37:47.417  INFO 12590 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:37:47.417  INFO 12590 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:48.596  INFO 12590 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.ArchiveShowController.archives', args=[{}]}
+2020-08-31 17:37:48.611  INFO 12590 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : archives
+2020-08-31 17:37:48.611  INFO 12590 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:49.111  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:37:49.114  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:37:49.114  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:50.242  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.AboutShowController.about', args=[]}
+2020-08-31 17:37:50.242  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : about
+2020-08-31 17:37:50.243  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:37:50.990  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:37:50.996  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:37:50.996  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:38:04.812  INFO 12590 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 17:38:04.826  INFO 12590 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 17:38:04.826  INFO 12590 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:38:05.427  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:38:05.436  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:38:05.437  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:38:06.822  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:38:06.922  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:38:06.922  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:38:07.050  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:38:07.060  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:38:07.060  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:38:07.395  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:38:07.404  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:38:07.405  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:38:20.306  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.AboutShowController.about', args=[]}
+2020-08-31 17:38:20.307  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : about
+2020-08-31 17:38:20.307  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:38:20.802  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:38:20.808  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:38:20.808  INFO 12590 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:40:41.033  INFO 12590 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 17:40:41.045  INFO 12590 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 17:40:41.045  INFO 12590 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:40:41.778  INFO 12590 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:40:41.788  INFO 12590 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:40:41.788  INFO 12590 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:40:46.389  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 17:40:46.402  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:40:46.402  INFO 12590 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:40:46.585  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 17:40:46.596  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:40:46.596  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:40:47.365  INFO 12590 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:40:47.370  INFO 12590 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:40:47.370  INFO 12590 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:42:21.216  INFO 12590 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 17:42:21.237  INFO 12590 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 17:42:21.237  INFO 12590 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:42:22.234  INFO 12590 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:42:22.246  INFO 12590 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:42:22.247  INFO 12590 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:42:22.839  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:42:22.941  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:42:22.941  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:42:23.105  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:42:23.138  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:42:23.138  INFO 12590 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:42:23.401  INFO 12590 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:42:23.409  INFO 12590 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:42:23.409  INFO 12590 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:43:01.964  INFO 12590 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 17:43:01.966  INFO 12590 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 17:43:01.969  INFO 12590 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 17:43:01.977  INFO 12590 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 17:43:05.532  INFO 12724 --- [restartedMain] com.gmy.BlogApplication                  : Starting BlogApplication on bogon with PID 12724 (/Users/guomuyao/Coding/project/java/web/blog/target/classes started by guomuyao in /Users/guomuyao/Coding/project/java/web/blog)
+2020-08-31 17:43:05.536 DEBUG 12724 --- [restartedMain] com.gmy.BlogApplication                  : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-31 17:43:05.536  INFO 12724 --- [restartedMain] com.gmy.BlogApplication                  : The following profiles are active: dev
+2020-08-31 17:43:05.872  INFO 12724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-31 17:43:05.873  INFO 12724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-31 17:43:06.433  INFO 12724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-31 17:43:06.506  INFO 12724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 5 JPA repository interfaces.
+2020-08-31 17:43:07.228  INFO 12724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-31 17:43:07.237  INFO 12724 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 17:43:07.238  INFO 12724 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-31 17:43:07.353  INFO 12724 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 17:43:07.354  INFO 12724 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1481 ms
+2020-08-31 17:43:07.529  INFO 12724 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 17:43:07.580  INFO 12724 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 17:43:07.620  INFO 12724 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-31 17:43:07.721  INFO 12724 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 17:43:07.740  WARN 12724 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 17:43:07.808  INFO 12724 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 17:43:08.065  INFO 12724 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-31 17:43:08.103  INFO 12724 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 17:43:08.120  INFO 12724 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-31 17:43:08.830  INFO 12724 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-31 17:43:08.873  INFO 12724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-31 17:43:08.875  INFO 12724 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-31 17:43:09.012  INFO 12724 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 17:43:09.045  INFO 12724 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 17:43:09.553  INFO 12724 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-31 17:43:09.561  INFO 12724 --- [restartedMain] com.gmy.BlogApplication                  : Started BlogApplication in 4.704 seconds (JVM running for 6.015)
+2020-08-31 17:43:11.960  INFO 12724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 17:43:11.960  INFO 12724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 17:43:11.979  INFO 12724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-08-31 17:43:12.028  INFO 12724 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:43:12.258  INFO 12724 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:43:12.258  INFO 12724 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:43:13.140  INFO 12724 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:43:13.239  INFO 12724 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:43:13.239  INFO 12724 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:43:13.666  INFO 12724 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:43:13.693  INFO 12724 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:43:13.693  INFO 12724 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:43:38.076  INFO 12724 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:43:38.153  INFO 12724 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:43:38.153  INFO 12724 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:43:38.433  INFO 12724 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:43:38.466  INFO 12724 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:43:38.466  INFO 12724 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:43:38.909  INFO 12724 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:43:38.923  INFO 12724 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:43:38.923  INFO 12724 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:43:40.180  INFO 12724 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/26', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 26, {}]}
+2020-08-31 17:43:40.198  WARN 12724 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-31 17:43:40.268  INFO 12724 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:43:40.268  INFO 12724 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:43:40.514  INFO 12724 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/26', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 26, {}]}
+2020-08-31 17:43:40.530  INFO 12724 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:43:40.530  INFO 12724 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:43:40.900  INFO 12724 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:43:40.909  INFO 12724 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:43:40.909  INFO 12724 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:43:47.541  INFO 12724 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/29', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 29, {}]}
+2020-08-31 17:43:47.558  INFO 12724 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:43:47.558  INFO 12724 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:43:47.778  INFO 12724 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/29', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 29, {}]}
+2020-08-31 17:43:47.800  INFO 12724 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:43:47.801  INFO 12724 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:43:48.109  INFO 12724 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:43:48.116  INFO 12724 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:43:48.117  INFO 12724 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:03.887  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:44:03.991  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:44:03.991  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:04.185  INFO 12724 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:44:04.218  INFO 12724 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:44:04.218  INFO 12724 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:04.565  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:44:04.580  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:44:04.581  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:06.351  INFO 12724 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/29', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 29, {}]}
+2020-08-31 17:44:06.361  INFO 12724 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:44:06.361  INFO 12724 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:06.534  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/29', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 29, {}]}
+2020-08-31 17:44:06.543  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:44:06.544  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:06.879  INFO 12724 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:44:06.888  INFO 12724 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:44:06.889  INFO 12724 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:08.775  INFO 12724 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/26', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 26, {}]}
+2020-08-31 17:44:08.787  INFO 12724 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:44:08.787  INFO 12724 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:09.004  INFO 12724 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/26', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 26, {}]}
+2020-08-31 17:44:09.024  INFO 12724 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:44:09.024  INFO 12724 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:09.393  INFO 12724 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:44:09.399  INFO 12724 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:44:09.399  INFO 12724 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:10.813  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/29', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 29, {}]}
+2020-08-31 17:44:10.822  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:44:10.823  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:11.004  INFO 12724 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/29', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 29, {}]}
+2020-08-31 17:44:11.016  INFO 12724 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:44:11.016  INFO 12724 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:11.408  INFO 12724 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:44:11.418  INFO 12724 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:44:11.418  INFO 12724 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:20.007  INFO 12724 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/26', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 26, {}]}
+2020-08-31 17:44:20.017  INFO 12724 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:44:20.017  INFO 12724 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:20.159  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/26', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 26, {}]}
+2020-08-31 17:44:20.166  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:44:20.166  INFO 12724 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:20.487  INFO 12724 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:44:20.493  INFO 12724 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:44:20.493  INFO 12724 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:29.418  INFO 12724 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:44:29.494  INFO 12724 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:44:29.494  INFO 12724 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:29.697  INFO 12724 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:44:29.725  INFO 12724 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:44:29.726  INFO 12724 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:44:30.170  INFO 12724 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:44:30.177  INFO 12724 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:44:30.177  INFO 12724 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:51:12.875  INFO 12724 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 17:51:12.877  INFO 12724 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 17:51:12.879  INFO 12724 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-31 17:51:12.887  INFO 12724 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-31 17:51:18.147  INFO 12794 --- [restartedMain] com.gmy.BlogApplication                  : Starting BlogApplication on bogon with PID 12794 (/Users/guomuyao/Coding/project/java/web/blog/target/classes started by guomuyao in /Users/guomuyao/Coding/project/java/web/blog)
+2020-08-31 17:51:18.154 DEBUG 12794 --- [restartedMain] com.gmy.BlogApplication                  : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+2020-08-31 17:51:18.155  INFO 12794 --- [restartedMain] com.gmy.BlogApplication                  : The following profiles are active: dev
+2020-08-31 17:51:18.564  INFO 12794 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-31 17:51:18.565  INFO 12794 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-31 17:51:19.203  INFO 12794 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-31 17:51:19.285  INFO 12794 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73ms. Found 5 JPA repository interfaces.
+2020-08-31 17:51:20.059  INFO 12794 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-31 17:51:20.069  INFO 12794 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-31 17:51:20.070  INFO 12794 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-31 17:51:20.182  INFO 12794 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-31 17:51:20.182  INFO 12794 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1617 ms
+2020-08-31 17:51:20.352  INFO 12794 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 17:51:20.400  INFO 12794 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-31 17:51:20.445  INFO 12794 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-31 17:51:20.553  INFO 12794 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-31 17:51:20.576  WARN 12794 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-31 17:51:20.638  INFO 12794 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-31 17:51:20.968  INFO 12794 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-31 17:51:21.013  INFO 12794 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-31 17:51:21.033  INFO 12794 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-31 17:51:21.780  INFO 12794 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-08-31 17:51:21.830  INFO 12794 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-31 17:51:21.832  INFO 12794 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-31 17:51:21.980  INFO 12794 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-31 17:51:21.988  INFO 12794 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-31 17:51:22.498  INFO 12794 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-31 17:51:22.507  INFO 12794 --- [restartedMain] com.gmy.BlogApplication                  : Started BlogApplication in 5.302 seconds (JVM running for 7.078)
+2020-08-31 17:51:22.581  INFO 12794 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 17:51:22.582  INFO 12794 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-31 17:51:22.595  INFO 12794 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-08-31 17:51:22.623  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 17:51:22.699  WARN 12794 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-31 17:51:22.710  WARN 12794 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-08-31 17:51:22.718  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 17:51:22.718  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:51:23.608  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:51:23.625  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:51:23.625  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:51:25.722  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-31 17:51:25.901  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:51:25.901  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:51:26.044  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-31 17:51:26.068  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:51:26.068  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:51:26.448  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:51:26.461  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:51:26.462  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:51:31.815  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/39', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 39, {}]}
+2020-08-31 17:51:31.864  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:51:31.864  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:51:32.015  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/39', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 39, {}]}
+2020-08-31 17:51:32.029  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:51:32.030  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:51:32.379  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:51:32.388  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:51:32.389  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:52:06.799  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-31 17:52:06.880  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:52:06.880  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:52:07.067  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-31 17:52:07.105  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:52:07.105  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:52:07.555  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:52:07.565  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:52:07.566  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:52:45.427  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-31 17:52:45.522  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:52:45.522  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:52:45.741  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/38', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[38, {}]}
+2020-08-31 17:52:45.794  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:52:45.795  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:52:46.200  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:52:46.214  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:52:46.215  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:53:38.269  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TypeShowController.types', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 17:53:38.292  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : types
+2020-08-31 17:53:38.292  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:53:38.858  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:53:38.869  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:53:38.869  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:53:51.867  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 17:53:51.886  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:53:51.886  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:53:52.094  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 17:53:52.113  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:53:52.113  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:53:52.439  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:53:52.445  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:53:52.446  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:53:53.770  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.ArchiveShowController.archives', args=[{}]}
+2020-08-31 17:53:53.795  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : archives
+2020-08-31 17:53:53.796  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:53:54.264  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:53:54.271  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:53:54.271  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:53:56.080  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.AboutShowController.about', args=[]}
+2020-08-31 17:53:56.083  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : about
+2020-08-31 17:53:56.084  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:53:56.824  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:53:56.834  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:53:56.835  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:54:27.336  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 17:54:27.352  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 17:54:27.352  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:54:27.875  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:54:27.880  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:54:27.880  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:54:30.005  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TypeShowController.types', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 17:54:30.015  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : types
+2020-08-31 17:54:30.015  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:54:30.725  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:54:30.734  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:54:30.735  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:54:31.406  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 17:54:31.419  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:54:31.420  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:54:31.596  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 17:54:31.609  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 17:54:31.609  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:54:31.980  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:54:31.991  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:54:31.991  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:54:32.903  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.ArchiveShowController.archives', args=[{}]}
+2020-08-31 17:54:32.918  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : archives
+2020-08-31 17:54:32.918  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:54:33.413  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:54:33.419  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:54:33.419  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:54:37.697  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 17:54:37.782  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 17:54:37.782  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:54:38.355  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:54:38.368  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:54:38.368  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:55:15.221  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:55:15.298  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:55:15.298  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:55:15.464  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 17:55:15.481  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 17:55:15.481  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 17:55:15.812  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 17:55:15.817  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 17:55:15.817  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:04:51.528  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:04:51.557  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:04:51.557  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:04:52.371  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:04:52.376  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:04:52.376  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:04:54.389  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.AboutShowController.about', args=[]}
+2020-08-31 18:04:54.389  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : about
+2020-08-31 18:04:54.389  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:04:54.747  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:04:54.751  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:04:54.751  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:05:05.393  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.AboutShowController.about', args=[]}
+2020-08-31 18:05:05.393  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : about
+2020-08-31 18:05:05.394  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:05:05.787  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:05:05.793  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:05:05.793  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:05:13.135  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:05:13.148  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:05:13.148  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:05:13.624  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:05:13.629  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:05:13.629  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:06:44.510  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:06:44.614  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:06:44.614  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:06:44.650 ERROR 12794 --- [http-nio-8080-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-5] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "type.id" (template: "index" - line 88, col 53)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "type.id" (template: "index" - line 88, col 53)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.resolveParameters(LinkExpression.java:337) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:283) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'id' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	... 80 common frames omitted
+
+2020-08-31 18:06:44.657 ERROR 12794 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'id' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337) ~[spring-expression-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.resolveParameters(LinkExpression.java:337) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:283) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-08-31 18:07:03.549  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:07:03.560  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:07:03.560  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:07:04.050  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:07:04.054  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:07:04.055  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:07:05.849  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/2', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TypeShowController.types', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 2, {}]}
+2020-08-31 18:07:05.855  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : types
+2020-08-31 18:07:05.855  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:07:06.261  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:07:06.265  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:07:06.265  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:07:12.019  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/2', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TypeShowController.types', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 2, {}]}
+2020-08-31 18:07:12.026  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : types
+2020-08-31 18:07:12.026  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:07:12.417  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:07:12.421  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:07:12.421  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:07:15.418  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TypeShowController.types', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 1, {}]}
+2020-08-31 18:07:15.426  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : types
+2020-08-31 18:07:15.426  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:07:15.816  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:07:15.820  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:07:15.820  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:07:20.292  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TypeShowController.types', args=[Page request [number: 0, size 3, sort: updateTime: DESC], 3, {}]}
+2020-08-31 18:07:20.298  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : types
+2020-08-31 18:07:20.298  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:07:20.709  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:07:20.714  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:07:20.714  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:09:00.281  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:09:00.292  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:09:00.292  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:09:00.859  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:09:00.863  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:09:00.864  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:09:49.701  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:09:49.723  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:09:49.724  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:09:50.487  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:09:50.494  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:09:50.494  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:09:52.232  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.AboutShowController.about', args=[]}
+2020-08-31 18:09:52.232  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : about
+2020-08-31 18:09:52.232  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:09:52.595  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:09:52.598  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:09:52.599  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:10:11.976  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:10:11.993  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:10:11.993  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:10:12.609  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:10:12.620  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:10:12.620  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:10:14.248  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:10:14.263  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:10:14.264  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:10:14.844  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:10:14.851  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:10:14.852  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:15:09.082  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:15:09.098  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:15:09.098  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:15:09.614  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:15:09.616  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:15:09.617  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:15:10.838  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 18:15:10.908  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 18:15:10.908  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:15:11.043  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/blog/52', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.blog', args=[52, {}]}
+2020-08-31 18:15:11.065  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : blog
+2020-08-31 18:15:11.065  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:15:11.367  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:15:11.370  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:15:11.371  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:15:17.761  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.AboutShowController.about', args=[]}
+2020-08-31 18:15:17.762  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : about
+2020-08-31 18:15:17.762  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:15:18.148  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:15:18.151  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:15:18.151  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:15:57.530  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:15:57.546  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:15:57.546  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:15:58.093  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:15:58.098  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:15:58.098  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:16:45.879  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:16:45.893  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:16:45.893  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:16:46.528  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:16:46.550  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:16:46.551  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:18:49.529  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:18:49.544  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:18:49.544  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:18:50.136  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:18:50.142  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:18:50.142  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:19:33.941  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:19:33.959  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:19:33.959  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:19:34.672  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:19:34.680  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:19:34.680  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:19:37.914  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.AboutShowController.about', args=[]}
+2020-08-31 18:19:37.915  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : about
+2020-08-31 18:19:37.915  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:19:38.299  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:19:38.304  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:19:38.304  INFO 12794 --- [http-nio-8080-exec-1] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:21:35.798  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:21:35.815  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:21:35.815  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:21:36.476  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:21:36.480  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:21:36.480  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:21:51.726  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:21:51.737  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:21:51.737  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:21:52.341  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:21:52.349  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:21:52.349  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:24:06.451  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:24:06.476  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:24:06.477  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:24:07.386  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:24:07.393  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:24:07.393  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:31:22.180  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:31:22.195  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:31:22.195  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:31:22.201 ERROR 12794 --- [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.attoparser.ParseException: An error happened during template parsing (template: "class path resource [templates/index.html]" - line 63, col 162)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]" - line 63, col 162)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	... 50 common frames omitted
+Caused by: org.attoparser.ParseException: (Line = 63, Column = 162) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	... 76 common frames omitted
+
+2020-08-31 18:31:22.202 ERROR 12794 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
+
+org.attoparser.ParseException: (Line = 63, Column = 162) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:302) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:588) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.FragmentExpression.executeFragmentExpression(FragmentExpression.java:391) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:89) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpressionParameters(FragmentExpression.java:529) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.FragmentExpression.doCreateExecutedFragmentExpression(FragmentExpression.java:471) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.expression.FragmentExpression.createExecutedFragmentExpression(FragmentExpression.java:426) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:359) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring5-3.0.11.RELEASE.jar:3.0.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-08-31 18:31:51.817  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:31:51.825  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:31:51.825  INFO 12794 --- [http-nio-8080-exec-4] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:31:52.350  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:31:52.360  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:31:52.360  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:36:36.030  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2020-08-31 18:36:36.043  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : index
+2020-08-31 18:36:36.044  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:36:36.744  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:36:36.753  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:36:36.753  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:36:39.880  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TypeShowController.types', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 18:36:39.887  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : types
+2020-08-31 18:36:39.888  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:36:40.352  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:36:40.356  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:36:40.356  INFO 12794 --- [http-nio-8080-exec-5] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:36:46.652  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 18:36:46.660  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 18:36:46.660  INFO 12794 --- [http-nio-8080-exec-7] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:36:46.876  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.TagShowController.tags', args=[Page request [number: 0, size 3, sort: updateTime: DESC], -1, {}]}
+2020-08-31 18:36:46.893  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : Result : tags
+2020-08-31 18:36:46.893  INFO 12794 --- [http-nio-8080-exec-9] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:36:47.504  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:36:47.509  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:36:47.509  INFO 12794 --- [http-nio-8080-exec-8] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:36:52.626  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.ArchiveShowController.archives', args=[{}]}
+2020-08-31 18:36:52.640  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : Result : archives
+2020-08-31 18:36:52.640  INFO 12794 --- [http-nio-8080-exec-6] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:36:53.162  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:36:53.165  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:36:53.165  INFO 12794 --- [http-nio-8080-exec-10] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:37:04.792  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.AboutShowController.about', args=[]}
+2020-08-31 18:37:04.793  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : Result : about
+2020-08-31 18:37:04.793  INFO 12794 --- [http-nio-8080-exec-2] com.gmy.aspect.LogAspect                 : ----------doAfter----------
+2020-08-31 18:37:05.295  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newBlog', ip='0:0:0:0:0:0:0:1', classMethod='com.gmy.web.IndexController.newBlogs', args=[{}]}
+2020-08-31 18:37:05.300  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : Result : _fragments :: newBlogList
+2020-08-31 18:37:05.300  INFO 12794 --- [http-nio-8080-exec-3] com.gmy.aspect.LogAspect                 : ----------doAfter----------

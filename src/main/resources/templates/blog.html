@@ -433,7 +433,7 @@ h5,h6{font-size:1em;}
 
             <!--标签-->
             <div class="m-padded-left-right-responsive">
-                <div class="ui basic green left pointing label" th:each="tag : ${blog.tags}" th:text="${tag.name}">Maven</div>
+                <a th:href="@{/tags/{id}(id=${tag.id})}" target="_blank" class="ui basic green left pointing label" th:each="tag : ${blog.tags}" th:text="${tag.name}">Maven</a>
             </div>
 
             <!--赞赏-->

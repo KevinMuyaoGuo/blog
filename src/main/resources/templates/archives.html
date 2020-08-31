@@ -54,7 +54,7 @@
             <div class="ui fluid vertical menu">
                 <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog : ${item.value}">
                 <span>
-                    <i class="mini green circle icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span th:text="${blog.title}">Maven 详解</span>&nbsp;&nbsp;
+                    <i class="mini green circle icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span th:text="${blog.title}" class="m-black m-text-href">Maven 详解</span>&nbsp;&nbsp;
                     <div class="ui green basic label m-padded-mini m-text-normal" th:text="|${#dates.format(blog.updateTime, 'MMMdd')}日|"> 8月3日</div>
                 </span>
                     <div class="ui basic blue label m-padded-tiny m-text-normal" th:text="${blog.flag}">原创</div>
