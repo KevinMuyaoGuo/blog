@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
     <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
-    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>-->
     <link rel="stylesheet" href="../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
     <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
     <link rel="stylesheet" href="../static/css/custom.css" th:href="@{/css/custom.css}">
     <link rel="stylesheet" href="../static/css/client-background.css" th:href="@{/css/client-background.css}">
     <link rel="stylesheet" href="../static/lib/particleground/style.css" th:href="@{/lib/particleground/style.css}">
 </head>
+
 <body>
+
+<div th:fragment="particlesBackground" id="particles-background"></div>
 
 <!--导航-->
 <nav th:fragment="page(pageNum)" class="ui inverted attached segment animate__animated animate__fadeIn m-padded-tb-mini m-shadow-small m-nav">
@@ -48,7 +50,6 @@
 
 
 <!--中间内容-->
-<div th:fragment="particlesBackground" id="particles-background"></div>
 
 
 <!--底部footer-->

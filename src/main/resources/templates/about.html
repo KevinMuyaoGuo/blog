@@ -9,6 +9,9 @@
 </head>
 <body>
 
+<!--动态背景-->
+<div th:replace="_fragments :: particlesBackground"></div>
+
 <!--导航-->
 <nav th:replace="_fragments :: page(5)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
@@ -33,13 +36,11 @@
 </nav>
 
 <!--中间内容-->
-<div th:replace="_fragments :: particlesBackground"></div>
 <div class="m-container m-padded-tb-big animate__animated animate__fadeIn">
     <div class="ui container">
         <div class="ui stackable grid">
             <div class="eleven wide column">
-
-                <img src="../static/images/test.jpg" th:src="@{/images/test.jpg}" alt="" class="ui rounded image">
+                <img src="../static/images/about.jpg" th:src="@{/images/about.jpg}" alt="" class="ui rounded image">
             </div>
             <div class="five wide column">
                 <div class="ui top attached segment">

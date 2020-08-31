@@ -10,6 +10,9 @@
 
 <body>
 
+<!--动态背景-->
+<div th:replace="_fragments :: particlesBackground"></div>
+
 <!--导航-->
 <nav th:replace="_fragments::page(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
@@ -33,9 +36,12 @@
     </a>
 </nav>
 
+<!--引导页-->
+<!--
+<section class="m-guide-page"></section>
+-->
 
 <!--中间内容-->
-<div th:replace="_fragments :: particlesBackground"></div>
 <div class="m-container m-padded-tb-big animate__animated animate__fadeIn">
     <div class="ui container">
         <div class="ui stackable grid">
@@ -60,7 +66,7 @@
                     <div class="ui padded vertical segment m-padded-large" th:each="blog : ${page.content}">
                         <div class="ui middle aligned mobile reversed stackable grid">
                             <div class="eleven wide column">
-                                <h3 class="ui header"><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-text-href" th:text="${blog.title}">文章标题1</a></h3>
+                                <h3 class="ui header"><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-href" th:text="${blog.title}">文章标题1</a></h3>
                                 <p class="m-text" th:text="|${blog.description}......|">大江东去，浪淘尽，千古风流人物。
                                     故垒西边，人道是，三国周郎赤壁。
                                     乱石穿空，惊涛拍岸，卷起千堆雪。
@@ -299,13 +305,13 @@
                                 <i class="idea icon"></i>分类
                             </div>
                             <div class="right aligned column">
-                                <a href="#" th:href="@{types/-1}" target="_blank">更多 <i class="angle double right icon"></i></a>
+                                <a href="#" th:href="@{types/-1}" target="_blank" class="m-href">更多 <i class="angle double right icon"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="ui green segment">
                         <div class="ui fluid vertical menu">
-                            <a href="#" th:href="@{/types/{id}(id=${type.id})}" target="_blank" class="item" th:each="type : ${types}">
+                            <a href="#" th:href="@{/types/{id}(id=${type.id})}" target="_blank" class="item m-href" th:each="type : ${types}">
                                 <span th:text="${type.name}">学习日志</span>
                                 <div class="ui green basic left pointing label" th:text="${#arrays.length(type.blogs)}">12</div>
                             </a>
@@ -334,12 +340,12 @@
                                 <i class="tags icon"></i>标签
                             </div>
                             <div class="right aligned column">
-                                <a href="#" th:href="@{tags/-1}" target="_blank">更多 <i class="angle double right icon"></i></a>
+                                <a href="#" th:href="@{tags/-1}" target="_blank" class="m-href">更多 <i class="angle double right icon"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="ui green segment">
-                        <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" target="_blank" class="ui green basic left pointing label m-margin-tb-tiny" th:each="tag : ${tags}">
+                        <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" target="_blank" class="ui basic left pointing label m-margin-tb-tiny m-href" th:each="tag : ${tags}">
                             <span th:text="${tag.name}">SpringBoot</span>
                             <div class="detail" th:text="${#arrays.length(tag.blogs)}">10</div>
                         </a>
@@ -369,7 +375,7 @@
                         <i class="bookmark icon"></i>最新推荐
                     </div>
                     <div class="ui segment" th:each="blog : ${recommendBlogs}">
-                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-text-thin" th:text="${blog.title}">推荐文章</a>
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-text-thin m-href" th:text="${blog.title}">推荐文章</a>
                     </div>
                     <!--/*-->
                     <div class="ui segment">

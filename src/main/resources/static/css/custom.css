@@ -182,7 +182,7 @@
 /*-----------------shadow------------------*/
 .m-shadow-small {
     -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important;
     border: none !important;
 }
 
@@ -205,7 +205,7 @@
 
 /*-------------------margin--------------------*/
 
-.m-text-href:hover {
+.m-href:hover {
     color: #21ba45 !important;
 }
 
