@@ -10,21 +10,27 @@
     <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>-->
     <link rel="stylesheet" href="../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
     <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
-    <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="../static/css/custom.css" th:href="@{/css/custom.css}">
+    <link rel="stylesheet" href="../static/css/client-background.css" th:href="@{/css/client-background.css}">
     <link rel="stylesheet" href="../static/lib/particleground/style.css" th:href="@{/lib/particleground/style.css}">
 </head>
 <body>
 
 <!--导航-->
-<nav th:fragment="page(pageNum)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+<nav th:fragment="page(pageNum)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small m-nav">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
             <h2 class="ui white header item">薛定谔的麻辣锅</h2>
-            <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${pageNum==1}?'active'"><i class="home icon"></i><span th:text="#{nav.index}">首页</span></a>
-            <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${pageNum==2}?'active'"><i class="idea icon"></i>分类</a>
-            <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${pageNum==3}?'active'"><i class="tags icon"></i>标签</a>
-            <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${pageNum==4}?'active'"><i class="clone icon"></i>归档</a>
-            <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${pageNum==5}?'active'"><i class="info icon"></i>关于我</a>
+            <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${pageNum==1}?'active'"><i
+                    class="home icon"></i><span th:text="#{nav.index}">首页</span></a>
+            <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide"
+               th:classappend="${pageNum==2}?'active'"><i class="idea icon"></i>分类</a>
+            <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${pageNum==3}?'active'"><i
+                    class="tags icon"></i>标签</a>
+            <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide"
+               th:classappend="${pageNum==4}?'active'"><i class="clone icon"></i>归档</a>
+            <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${pageNum==5}?'active'"><i
+                    class="info icon"></i>关于我</a>
             <div class="right m-item item m-mobile-hide">
                 <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
                     <div class="ui icon input">
@@ -47,7 +53,8 @@
             <div class="three wide column">
                 <div class="ui inverted link list">
                     <div class="item">
-                        <img src="../static/images/wechat.png" th:src="@{#{imagesURL}+#{wechat}}" class="ui rounded image"
+                        <img src="../static/images/wechat.png" th:src="@{#{imagesURL}+#{wechat}}"
+                             class="ui rounded image"
                              alt="" style="width: 110px">
                     </div>
                 </div>
@@ -70,7 +77,8 @@
                 <h4 class="ui inverted header m-text-thin m-text-spaced m-opacity-mini">最新博客</h4>
                 <div id="newBlog-container">
                     <div class="ui inverted link list" th:fragment="newBlogList">
-                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newBlogs}" th:text="${blog.title}">用户故事</a>
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin"
+                           th:each="blog : ${newBlogs}" th:text="${blog.title}">用户故事</a>
                         <!--/*-->
                         <a href="#" class="item m-text-thin">用户故事</a>
                         <a href="#" class="item m-text-thin">用户故事</a>
@@ -90,9 +98,12 @@
     <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
     <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
     <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
-    <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
-    <script src="../static/lib/particleground/jquery-1.11.1.min.js" th:src="@{/lib/particleground/jquery-1.11.1.min.js}"></script>
-    <script src="../static/lib/particleground/jquery.particleground.min.js" th:src="@{/lib/particleground/jquery.particleground.min.js}"></script>
+    <script src="../static/lib/waypoints/jquery.waypoints.min.js"
+            th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script src="../static/lib/particleground/jquery-1.11.1.min.js"
+            th:src="@{/lib/particleground/jquery-1.11.1.min.js}"></script>
+    <script src="../static/lib/particleground/jquery.particleground.min.js"
+            th:src="@{/lib/particleground/jquery.particleground.min.js}"></script>
 
     <script>
 
@@ -103,6 +114,7 @@
         });
 
         $('#newBlog-container').load(/*[[@{/footer/newBlog}]]*/"/footer/newBlog");
+
     </script>
 </th:block>
 

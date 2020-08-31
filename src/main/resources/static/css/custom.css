@@ -1,8 +1,3 @@
-/*body {
-    background: url("../images/bright-background.png");
-}*/
-
-
 /*-------------------padded--------------------*/
 
 .m-padded-mini {
@@ -152,6 +147,14 @@
     right: 3em !important;
 }
 
+/*导航栏吸顶效果*/
+.m-nav {
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    z-index: 9 !important;
+    top: 0 !important; // 必须设一个值，否则不生效
+}
+
 /*------------------display------------------*/
 .m-inline-block {
     display: inline-block !important;
@@ -162,7 +165,7 @@
 .m-container {
     max-width: 72em !important;
     margin: auto !important;
-    position: absolute;
+    /*position: absolute !important;*/
 }
 
 .m-container-small {
@@ -178,7 +181,8 @@
 /*-----------------shadow------------------*/
 .m-shadow-small {
     -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    border: none !important;
 }
 
 /*-----------------color------------------*/
@@ -188,6 +192,10 @@
 
 .m-grey {
     color: #444444 !important;
+}
+
+.m-white {
+    color: #eeeeee !important;
 }
 
 .m-green {
