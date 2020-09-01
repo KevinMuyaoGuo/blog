@@ -110,13 +110,13 @@
         <div class="ui bottom attached segment">
             <div class="ui middle aligned three column grid">
                 <div class="column">
-                    <a th:href="@{/tags/{id}?page={page}(id=${activeTagId},page=${page.number}-1)}" th:unless="${page.first}" class="ui mini green basic button">上一页</a>
+                    <a id="prevPage-btn" th:href="@{/tags/{id}?page={page}(id=${activeTagId},page=${page.number}-1)}" th:unless="${page.first}" class="ui mini green basic button">上一页</a>
                 </div>
                 <div class="center aligned column">
                     <div>第 <span th:text="${page.number+1}" class="m-green m-text-thin"></span> / <span th:text="${page.totalPages}" class="m-black m-text-thin"></span> 页</div>
                 </div>
                 <div class="right aligned column">
-                    <a th:href="@{/tags/{id}?page={page}(id=${activeTagId},page=${page.number}+1)}" th:unless="${page.last}" class="ui mini green basic button">下一页</a>
+                    <a id="nextPage-btn" th:href="@{/tags/{id}?page={page}(id=${activeTagId},page=${page.number}+1)}" th:unless="${page.last}" class="ui mini green basic button">下一页</a>
                 </div>
 
             </div>
@@ -176,6 +176,18 @@
     $('.menu.toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');
     })
+
+    $('#nextPage-btn').hover(function () {
+        $('#nextPage-btn').removeClass('basic');
+    },function () {
+        $('#nextPage-btn').addClass('basic');
+    });
+
+    $('#prevPage-btn').hover(function () {
+        $('#prevPage-btn').removeClass('basic');
+    },function () {
+        $('#prevPage-btn').addClass('basic');
+    });
 
 </script>
 </body>

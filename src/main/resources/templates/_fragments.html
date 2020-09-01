@@ -121,6 +121,19 @@
 
         $('#newBlog-container').load(/*[[@{/footer/newBlog}]]*/"/footer/newBlog");
 
+
+        $('#nextPage-btn').hover(function () {
+            $('#nextPage-btn').removeClass('basic');
+        },function () {
+            $('#nextPage-btn').addClass('basic');
+        });
+
+        $('#prevPage-btn').hover(function () {
+            $('#prevPage-btn').removeClass('basic');
+        },function () {
+            $('#prevPage-btn').addClass('basic');
+        });
+
     </script>
 </th:block>
 

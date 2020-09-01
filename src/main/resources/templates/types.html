@@ -96,8 +96,7 @@
                                 </div>
                             </div>
                             <div class="right aligned five wide column">
-                                <a href="#" target="_blank"
-                                   class="ui green basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">认知升级</a>
+                                <div class="ui green basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">认知升级</div>
                             </div>
                         </div>
                     </div>
@@ -114,13 +113,13 @@
         <div class="ui bottom attached segment">
             <div class="ui middle aligned three column grid">
                 <div class="left aligned column">
-                    <a href="#" th:href="@{/types/{id}?page={page}(id=${activeTypeId},page=${page.number}-1)}" th:unless="${page.first}" class="ui mini green basic button">上一页</a>
+                    <a id="prevPage-btn" href="#" th:href="@{/types/{id}?page={page}(id=${activeTypeId},page=${page.number}-1)}" th:unless="${page.first}" class="ui mini green basic button">上一页</a>
                 </div>
                 <div class="center aligned column">
                     <div>第 <span th:text="${page.number+1}" class="m-green m-text-thin"></span> / <span th:text="${page.totalPages}" class="m-black m-text-thin"></span> 页</div>
                 </div>
                 <div class="right aligned column">
-                    <a href="#" th:href="@{/types/{id}?page={page}(id=${activeTypeId},page=${page.number}+1)}" th:unless="${page.last}" class="ui mini green basic button">下一页</a>
+                    <a id="nextPage-btn" href="#" th:href="@{/types/{id}?page={page}(id=${activeTypeId},page=${page.number}+1)}" th:unless="${page.last}" class="ui mini green basic button">下一页</a>
                 </div>
 
             </div>
@@ -179,6 +178,19 @@
     $('.menu.toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');
     })
+
+    $('#nextPage-btn').hover(function () {
+        $('#nextPage-btn').removeClass('basic');
+    },function () {
+        $('#nextPage-btn').addClass('basic');
+    });
+
+    $('#prevPage-btn').hover(function () {
+        $('#prevPage-btn').removeClass('basic');
+    },function () {
+        $('#prevPage-btn').addClass('basic');
+    });
+
 
 </script>
 </body>
