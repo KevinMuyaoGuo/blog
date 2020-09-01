@@ -40,18 +40,36 @@
     <div class="ui container">
         <div class="ui stackable grid">
             <div class="eleven wide column">
-                <img src="../static/images/about.jpg" th:src="@{/images/about.jpg}" alt="" class="ui rounded image">
+                <img th:src="@{/images/about-me.jpg}" alt="" class="ui rounded image">
+                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <img th:src="@{/images/about-extra1.jpg}" style="width: 337px !important;" alt="" class="ui rounded image">
+                        </td>
+                        <td>
+                            <img th:src="@{/images/about-extra2.jpg}" style="width: 358px !important;" alt="" class="ui rounded image">
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="five wide column">
                 <div class="ui top attached segment">
                     <div class="ui header">关于我</div>
                 </div>
                 <div class="ui attached segment">
-                    <p class="m-text">
-                        郭慕尧，吉林大学计算机科学与技术专业，热爱用代码构造世界~
+                    <img th:src="@{/images/avatar.jpg}" class="ui large avatar image" alt="">
+                    <p></p>
+                    <p>
+                        <ui class="list">
+                            <li class="m-text">姓名：郭慕尧</li>
+                            <li class="m-text">性别：男 ♂</li>
+                            <li class="m-text">学校：吉林大学</li>
+                            <li class="m-text">专业：计算机科学与技术</li>
+                        </ui>
                     </p>
                     <p class="m-text">
-                        闲余时间爱好吉他弹唱、踢足球...
+                        喜欢尝试新鲜事物 💡‍，热爱用代码构造世界 (づ｡◕‿‿◕｡)づ
                     </p>
                     <div class="">
                         <a href="#" th:href="@{#{about.githubURL}}" target="_blank" class="ui circular github icon button m-text-thin" data-tooltip="点击进入我的 GitHub" data-position="bottom center"><i class="github icon"></i></a>
@@ -66,7 +84,18 @@
                     </div>
                 </div>
                 <div class="ui attached segment">
-                    <div class="ui header">技能</div>
+                    <div class="ui header">目前状态</div>
+                </div>
+                <div class="ui attached segment">
+                    <p class="m-text">
+                        待业中，求学中...
+                    </p>
+                    <p class="m-text">
+                        Coding... 👨‍💻
+                    </p>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui header">专业技能</div>
                 </div>
                 <div class="ui attached segment">
                     <div class="ui green basic left pointing label m-margin-tb-tiny">C/C++</div>
@@ -78,14 +107,16 @@
                     <div class="ui green basic left pointing label m-margin-tb-tiny">MyBatis</div>
                 </div>
                 <div class="ui attached segment">
-                    <div class="ui header">爱好</div>
+                    <div class="ui header">业余爱好</div>
                 </div>
                 <div class="ui bottom attached segment m-padded-tb-large">
                     <div class="ui orange basic left pointing label m-margin-tb-tiny">吉他</div>
+                    <div class="ui orange basic left pointing label m-margin-tb-tiny">非洲鼓</div>
                     <div class="ui orange basic left pointing label m-margin-tb-tiny">足球</div>
                     <div class="ui orange basic left pointing label m-margin-tb-tiny">书法</div>
                     <div class="ui orange basic left pointing label m-margin-tb-tiny">围棋</div>
                     <div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
+                    <div class="ui orange basic left pointing label m-margin-tb-tiny">视频剪辑</div>
                 </div>
             </div>
         </div>
