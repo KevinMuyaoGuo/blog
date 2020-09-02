@@ -37,7 +37,7 @@
                 <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
                     <div class="ui icon input">
                         <input type="text" name="query" placeholder="搜索文章..." th:value="${query}">
-                        <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                        <i id="search-btn" onclick="document.forms['search'].submit()" class="search link icon"></i>
                     </div>
                 </form>
             </div>
@@ -134,6 +134,7 @@
         },function () {
             $('#prevPage-btn').addClass('basic');
         });
+
 
     </script>
 </th:block>

@@ -724,7 +724,7 @@ h5,h6{font-size:1em;}
         position: 'left center'
     });
 
-    var serverURL = /*[[#{blog.serverURL}]]*/"127.0.0.1:8080";
+    var serverURL = /*[[#{blog.serverURL}]]*/"";
     var webURL = /*[[@{/blog/{id}(id=${blog.id})}]]*/"";
     var qrcode = new QRCode("qrcode", {
         text: serverURL+webURL,
