@@ -132,7 +132,7 @@
 
 /*------------------position-------------------*/
 .m-right-top {
-    position: absolute;
+    position: absolute !important;
     top: 0em !important;
     right: 1em !important;
 }
@@ -144,7 +144,7 @@
 
 .m-right-bottom {
     bottom: 10em !important;
-    right: 4em !important;
+    right: 2em !important;
 }
 
 /*导航栏吸顶效果*/
@@ -152,8 +152,7 @@
     position: sticky !important;
     position: -webkit-sticky !important;
     z-index: 9 !important;
-    top: 0 !important;
-/ / 必须设一个值，否则不生效
+    top: 0 !important;  /*必须设一个值，否则不生效*/
 }
 
 /*------------------display------------------*/

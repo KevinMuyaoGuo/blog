@@ -472,7 +472,7 @@ h5,h6{font-size:1em;}
                     </ui>
                 </div>
                 <div class="five wide column">
-                    <img src="../static/images/wechat.png" th:src="@{/images/wechat.PNG}" alt="" class="ui right floated rounded bordered image" style="width: 110px">
+                    <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui right floated rounded bordered image" style="width: 110px">
                 </div>
             </div>
         </div>
@@ -484,7 +484,7 @@ h5,h6{font-size:1em;}
                         <h3 class="ui dividing header">留言</h3>
                         <div class="comment" th:each="comment : ${comments}">
                             <a class="avatar"><!--th:href="${comment.avatar}==#{admin.avatar} ? @{/about} : @{javascript:void(null);}" th:target="${comment.avatar}==#{admin.avatar} ? _blank : _self"-->
-                                <img src="../static/images/visitor1.jpg" th:src="@{${comment.avatar}}">
+                                <img src="../static/images/visitor1.jpg" th:src="${comment.adminComment} ? @{/images/avatar.jpg} : @{${comment.avatar}}">
                             </a>
                             <div class="content">
                                 <a th:href="${comment.nickname}==#{admin.nickname} ? @{/about} : @{javascript:void(null);}" th:target="${comment.nickname}==#{admin.nickname} ? _blank : _self" class="author">
@@ -504,7 +504,7 @@ h5,h6{font-size:1em;}
                             <div class="comments" th:if="${#arrays.length(comment.replyComments)}>0">
                                 <div class="comment" th:each="reply : ${comment.replyComments}">
                                     <a class="avatar">
-                                        <img src="../static/images/visitor2.jpg" th:src="@{${reply.avatar}}">
+                                        <img src="../static/images/visitor2.jpg" th:src="${reply.adminComment} ? @{/images/avatar.jpg} : @{${reply.avatar}}">
                                     </a>
                                     <div class="content">
                                         <a th:href="${reply.nickname}==#{admin.nickname} ? @{/about} : @{javascript:void(null);}" th:target="${reply.nickname}==#{admin.nickname} ? _blank : _self" class="author">

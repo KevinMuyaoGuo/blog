@@ -2,10 +2,11 @@ spring:
   thymeleaf:
     mode: HTML
   profiles:
-    active: pro
+    active: dev      # 更改激活环境（ dev / pro ）
   messages:
     basename: i18n/messages
 
-
+# 留言头像
 comment.avatar: /images/visitor1.jpg
+# 回复头像
 reply.avatar: /images/visitor2.jpg

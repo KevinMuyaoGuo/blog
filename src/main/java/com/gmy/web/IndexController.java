@@ -7,6 +7,7 @@ import com.gmy.service.TagService;
 import com.gmy.service.TypeService;
 import com.gmy.vo.BlogQuery;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -23,6 +24,7 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class IndexController {
 
+
     @Autowired
     private BlogService blogService;
 
@@ -32,8 +34,11 @@ public class IndexController {
     @Autowired
     private TagService tagService;
 
+    private static final int INDEX_PAGE_SIZE = 6;
+    private static final int SEARCH_PAGE_SIZE = 6;
+
     @GetMapping("/")
-    public String index(@PageableDefault(size = 6, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String index(@PageableDefault(size = INDEX_PAGE_SIZE, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         Model model) {
         model.addAttribute("page", blogService.listBlog(pageable));
         model.addAttribute("types", typeService.listTypeTop(6));
@@ -50,7 +55,7 @@ public class IndexController {
     }*/
 
     @RequestMapping("/search")
-    public String search(@PageableDefault(size = 3, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String search(@PageableDefault(size = SEARCH_PAGE_SIZE, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                          @RequestParam String query, Model model) {
         model.addAttribute("page", blogService.listBlog("%" + query.toLowerCase() + "%", pageable));
         model.addAttribute("query", query);

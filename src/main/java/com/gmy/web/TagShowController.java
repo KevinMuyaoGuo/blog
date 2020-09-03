@@ -30,8 +30,10 @@ public class TagShowController {
     @Autowired
     private BlogService blogService;
 
+    private static final int TAGS_PAGE_SIZE = 6;
+
     @GetMapping("/tags/{id}")
-    public String tags(@PageableDefault(size = 3, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String tags(@PageableDefault(size = TAGS_PAGE_SIZE, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         @PathVariable Long id, Model model) {
         List<Tag> tags = tagService.listTagTop(10000);
         if (id == -1) {
