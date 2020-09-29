@@ -18,4 +18,6 @@ public interface CommentService {
     //保存
     Comment saveComment(Comment comment);
 
+    //删除
+
 }

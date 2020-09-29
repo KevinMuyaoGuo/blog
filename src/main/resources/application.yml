@@ -2,7 +2,7 @@ spring:
   thymeleaf:
     mode: HTML
   profiles:
-    active: dev      # 更改激活环境（ dev / pro ）
+    active: pro      # 更改激活环境（ dev / pro ）
   messages:
     basename: i18n/messages
 

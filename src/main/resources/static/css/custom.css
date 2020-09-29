@@ -93,7 +93,11 @@
 }
 
 .m-text-lined {
-    line-height: 1.8;
+    line-height: 1.8 !important;
+}
+
+.m-text-small{
+    font-size: 0.5em !important;
 }
 
 /*-------------------margin--------------------*/

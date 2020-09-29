@@ -1,18 +1,4 @@
-2020-09-03 11:11:16.922  INFO 26948 --- [restartedMain] com.gmy.BlogApplication                  : Starting BlogApplication on bogon with PID 26948 (/Users/guomuyao/Coding/project/java/web/blog/target/classes started by guomuyao in /Users/guomuyao/Coding/project/java/web/blog)
-2020-09-03 11:11:16.946  INFO 26948 --- [restartedMain] com.gmy.BlogApplication                  : The following profiles are active: pro
-2020-09-03 11:11:19.326  WARN 26948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-09-03 11:11:20.412  WARN 26948 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8800 is already in use
-2020-09-03 11:11:20.596 ERROR 26948 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8800 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8800 or configure this application to listen on another port.
-
+2020-09-29 22:58:32.859  INFO 96536 --- [restartedMain] com.gmy.BlogApplication                  : Starting BlogApplication on bogon with PID 96536 (/Users/guomuyao/Coding/project/java/web/blog/target/classes started by guomuyao in /Users/guomuyao/Coding/project/java/web/blog)
+2020-09-29 22:58:32.865  INFO 96536 --- [restartedMain] com.gmy.BlogApplication                  : The following profiles are active: pro
+2020-09-29 22:58:34.729  WARN 96536 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-29 22:58:36.241  INFO 96536 --- [restartedMain] com.gmy.BlogApplication                  : Started BlogApplication in 3.701 seconds (JVM running for 4.863)

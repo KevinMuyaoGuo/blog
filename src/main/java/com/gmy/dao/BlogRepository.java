@@ -38,4 +38,14 @@ public interface BlogRepository extends JpaRepository<Blog, Long>, JpaSpecificat
 
     @Query("select b from t_blog b where function('date_format',b.updateTime,'%Y') = ?1 and b.published = true order by function('date_format', b.updateTime, '%Y-%m-%d %H:%i:%s') desc")
     List<Blog> findByYear(String year);
+
+    @Transactional
+    @Modifying
+    @Query("update t_comment c set c.parentComment.id = null where c.blog.id = ?1")
+    int updateParentCommentIdToNull(Long id);
+
+    @Transactional
+    @Modifying
+    @Query("delete from t_comment c where c.blog.id = ?1")
+    void deleteCommentByBlogId(Long id);
 }

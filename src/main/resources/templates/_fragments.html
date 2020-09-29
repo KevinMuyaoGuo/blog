@@ -36,7 +36,7 @@
             <div class="right m-item item m-mobile-hide">
                 <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
                     <div class="ui icon input">
-                        <input type="text" name="query" placeholder="搜索文章..." th:value="${query}">
+                        <input type="text" name="query" placeholder="搜索文章...（暂未开放）" th:value="${query}">
                         <i id="search-btn" onclick="document.forms['search'].submit()" class="search link icon"></i>
                     </div>
                 </form>
@@ -99,7 +99,12 @@
             </div>
         </div>
         <div class="ui inverted section divider m-text-thin m-text-spaced m-opacity-mini"></div>
-        <p class="m-text-slim m-text-spaced m-opacity-tiny">Copyright © 2020 Designed by Kevin Guo</p>
+        <p class="m-text-slim m-text-small m-text-spaced m-opacity-tiny m-padded">
+            Copyright © 2020 Designed by Kevin Guo | 郭慕尧版权所有
+        </p>
+        <p class="m-text-slim m-text-small m-text-spaced m-opacity-tiny">
+            <a href="http://beian.miit.gov.cn/" class="m-white" target="_blank">吉ICP备2020004984号</a>
+        </p>
     </div>
 </footer>
 

@@ -3,6 +3,7 @@ package com.gmy.service;
 import com.gmy.NotFoundException;
 import com.gmy.dao.BlogRepository;
 import com.gmy.pojo.Blog;
+import com.gmy.pojo.Comment;
 import com.gmy.pojo.Type;
 import com.gmy.util.MarkdownUtils;
 import com.gmy.util.MyBeanUtils;
@@ -166,6 +167,8 @@ public class BlogServiceImpl implements BlogService{
     @Transactional
     @Override
     public void deleteBlog(Long id) {
+        blogRepository.updateParentCommentIdToNull(id);
+        blogRepository.deleteCommentByBlogId(id);
         blogRepository.deleteById(id);
     }
 }

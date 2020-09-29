@@ -17,4 +17,4 @@ logging:
     name: log/blog-pro.log
 
 server:
-  port: 8800
+  port: 80
